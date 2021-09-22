@@ -1,5 +1,4 @@
-# Python 
-## (En progreso)
+# Python (En progreso)
 
 En este repositorio se encuentran ejercicios y practicas del lenguaje en situaciones de la vida cotidiana.
 El objetivo fue , mejorar mi manejo del lenguaje  y la practica del mismo. Si bien todavia estoy construyendo el repositorio,
