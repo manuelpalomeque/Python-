@@ -11,7 +11,9 @@ todo el avance que haga lo subire acá.
           Operadores Arigméticos
     
 ####  B) Parte 2:
-          While
+          Ciclo For
+          Ciclo While
    
 ####  C) Parte 3:
-          Conceptos avanzados
+          Clases
+          POO
