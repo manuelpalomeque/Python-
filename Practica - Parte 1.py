@@ -57,3 +57,10 @@ autor = input('Quien fue el autor del libro ?')
 print(titulo, 'fue escrito por', autor)
 
 #convertir unidades, de toneladas a libras:
+
+valorToneladas = float(input('Ingrese el valor en Toneladas: '))
+
+toneladasAKg = valorToneladas * 1000
+valorLibras = toneladasAKg * 2.2
+
+print(f'El resultado es: {valorLibras} libras.')
