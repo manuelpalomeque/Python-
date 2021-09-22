@@ -1,3 +1,7 @@
+#Operaciones basicas:
+
+
+
 #Califica tu dia del  1 al  10
 #preguntarle al usuario como estuvo su dia
 #devolve el valor del usuario
