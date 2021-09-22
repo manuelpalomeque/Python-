@@ -8,6 +8,7 @@ todo el avance que haga lo subire acá.
 
 #### A) Parte 1:
           Conceptos basicos 
+          Operadores Arigméticos
     
 ####  B) Parte 2:
           While
