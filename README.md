@@ -4,16 +4,14 @@ En este repositorio se encuentran ejercicios y practicas del lenguaje en situaci
 El objetivo fue , mejorar mi manejo del lenguaje  y la practica del mismo. Si bien todavia estoy construyendo el repositorio,
 todo el avance que haga lo subire acá.
 
-###El contenido se organizó en tres partes: </h4>
+### El contenido se organizó en tres partes:
 
 #### A) Parte 1:
-        Conceptos basicos 
-        Operadores Arigméticos
+          Conceptos basicos 
+          Operadores Arigméticos
     
 ####  B) Parte 2:
-        Ciclo For
-        Cilo While
+          While
    
 ####  C) Parte 3:
-        Clases
-        POO
+          Conceptos avanzados
