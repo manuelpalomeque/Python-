@@ -64,3 +64,21 @@ toneladasAKg = valorToneladas * 1000
 valorLibras = toneladasAKg * 2.2
 
 print(f'El resultado es: {valorLibras} libras.')
+
+#Calcular el area y el perimetro de un rectangulo:
+alto = int(input('Por favor ingrese el valor del alto'))
+ancho = int(input('Por favor ingrese el valor del ancho'))
+
+perimetro = alto * 2 + ancho * 2
+superficie = alto * ancho
+
+print(f'El valor del perimetro es: {perimetro} y el valor de la superficie es {superficie}')
+
+#Determinar si el valor ingresado es Par o  Impar:
+
+valor = int(input('Ingrese un valor numerico:'))
+
+if valor % 2 == 0:
+    print('El numero es par')
+else:
+    print('El numero es impar')
