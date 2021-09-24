@@ -1,5 +1,7 @@
-#Calculadora: Pedirle al usuario que ingrese dos valores y emplear los operadores
-#arigmeticos en ellos.
+# Hacer un programa que permita ingresar por teclado dos números y que luego
+# muestre por pantalla la suma, la resta, la multiplicación, la división, modulo y exponente
+# de dichos números. Se deben mostrar los resultados en pantalla. Los números deben
+# ser solicitados una única vez.
 
 valor1 = int(input('Por favor ingrese el primer valor: '))
 valor2 = int(input('Por favor ingrese el segundo valor: '))
@@ -22,7 +24,6 @@ print(f'El modulo es: {modulo}')
 #Exponente:
 exponente = valor1 ** valor2
 print(f'Resultado de la potencia es: {exponente}')
-
 
 #Promedio de 4 calificaciones de un estudiante:
 
@@ -91,7 +92,28 @@ porcentajeCubierto = (superficieCubierta * 100)/ superficieTerreno
 porcentajeDescubierto = (superficieDescubierta * 100)/ superficieTerreno
 print(f' El porcentaje de metros cubiertos es del {porcentajeCubierto}% y descubiertos es {porcentajeDescubierto}%')
 
-#----------------------------------------------------------------------------------------------
+# Una importante cadena de delivery cuenta con una promoción por tiempo
+# limitado en la que otorga un 15% de descuento sobre el total del valor de la
+# compra realizada. Hacer un programa para solicitar el monto total y el mismo
+# calcule y emita por pantalla el total a cobrar con el descuento aplicado y el monto del descuento.
+
+valorCompra = float(input('Ingrese el valor de la compra: '))
+descuento = valorCompra *0.15
+totalACobrar = valorCompra - descuento
+print(f'El descuento es de ${descuento} y el monto total a abonar con el descuento incluido es de ${totalACobrar}')
+
+# Una universidad desea conocer los porcentajes de mujeres y hombres en las
+# carreras de ciencias exactas. Se solicita un programa para cargar la cantidad de
+# mujeres y la cantidad de hombres y que el mismo calcule y emita por pantalla
+# los porcentajes correspondientes.
+
+cantidadHombres = int(input('Ingrese la cantidad de hombres: '))
+cantidadMujeres = int(input('Ingrese la cantidad de mujeres: '))
+porcentajeHombres = (cantidadHombres * 100) / (cantidadMujeres + cantidadHombres)
+porcentajeMujeres = (cantidadMujeres * 100) / (cantidadMujeres + cantidadHombres)
+print(f'El porcentaje de hombres incriptos es de {porcentajeHombres}% y de mujeres {porcentajeMujeres}%')
+
+#-------------------------------------------------------------------------------------------------------------------
 #Determinar  cual de los dos valores es el mayor
 
 numero1 = int(input('Ingrese el primer numero: '))
