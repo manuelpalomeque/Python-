@@ -155,3 +155,13 @@ else:
 # descuento del 10%.
 # • Si el importe es ARS 5000 o más, aplica un descuento del 18%.
 
+importeCompra = float(input('Ingrese el monto de la compra: '))
+
+if importeCompra < 1000:
+    print(f'El monto es inferior a lo solicitado, por ende no hay descuento. Monto a abonar: ${importeCompra}')
+elif importeCompra >= 1000 and importeCompra < 5000:
+    importeConDescuento = importeCompra * 0.90
+    print(f' Se aplica un descuento del 10%. El monto a abonar es de ${importeConDescuento} ')
+elif importeCompra >= 5000:
+    importeConDescuento = importeCompra * 0.82
+    print(f'Se aplica un descuento del  18%. El monto a abonar es de $ {importeConDescuento}')
