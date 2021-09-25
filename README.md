@@ -9,6 +9,7 @@ todo el avance que haga lo subire acá.
 #### A) Parte 1:
           Operadores Arigméticos
           Sentencias de Condicionales
+          Operadores Logicos
         
 ####  B) Parte 2:
           Ciclo For
