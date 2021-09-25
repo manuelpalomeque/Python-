@@ -165,3 +165,16 @@ elif importeCompra >= 1000 and importeCompra < 5000:
 elif importeCompra >= 5000:
     importeConDescuento = importeCompra * 0.82
     print(f'Se aplica un descuento del  18%. El monto a abonar es de $ {importeConDescuento}')
+
+# Hacer un programa para ingresar un valor que estará expresado en minutos. Si
+# los minutos superan los 60, pasar el valor a horas, de lo contrario dejarlo en
+# minutos. Mostrar el resultado en pantalla aclarando si se muestran minutos u
+# horas.
+
+minutos = int(input('Ingresar la cantidad en minutos: '))
+
+if minutos >= 60:
+    valorEnHs = minutos / 60
+    print(f' El resultado en horas es de {valorEnHs} hs')
+else:
+    print(f'No es necesario pasar a horas. El resultado en minutos es {minutos}')
