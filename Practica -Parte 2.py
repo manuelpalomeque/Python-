@@ -17,3 +17,12 @@ for i in range(10):
 else:
     print('Fin del ciclo')
 
+# Hacer un programa para ingresar cinco números distintos y luego mostrar por
+# pantalla el mayor y el menor de ellos.
+
+# Hacer un programa para ingresar cuatro números y luego mostrar por pantalla
+# cuáles son mayores a 100.
+
+# Hacer un programa para ingresar cuatro números y luego mostrar por pantalla
+# cuántos son menores a 100.
+
