@@ -178,3 +178,34 @@ if minutos >= 60:
     print(f' El resultado en horas es de {valorEnHs} hs')
 else:
     print(f'No es necesario pasar a horas. El resultado en minutos es {minutos}')
+
+#Rango a establecer entre 0 a 5. Informar si esta dentro del rango
+
+valorIngresado = int(input('Escribe el valor: '))
+valorMinimo = 0
+valorMaximo = 5
+dentroDeRango = (valorIngresado >= valorMinimo) and (valorIngresado <= valorMaximo)
+
+if dentroDeRango:
+    print('Esta dentro de rango')
+else:
+    print('no esta dentro del rango')
+
+#El usuario debe ingresar el mes en el que esta y el programa le debe indicar la
+#estacion
+
+mes = int(input('ingrese un mes del año (1-12): '))
+estacion = None
+
+if mes == 1 or mes == 2 or mes == 3:
+    estacion = 'Invierno'
+elif mes == 4 or mes == 5 or mes == 6:
+    estacion = 'Primavera'
+elif mes == 7 or mes == 8 or mes == 9:
+    estacion = 'Verano'
+elif mes == 10 or mes == 10 or mes == 12:
+    estacion = 'Otoño'
+else:
+    print('ingrese un valor dentro del rango del  1 al 12')
+
+print(f'Para el mes {mes} , la estacion es {estacion}')
