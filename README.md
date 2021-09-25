@@ -7,11 +7,9 @@ todo el avance que haga lo subire acá.
 ### El contenido se organizó en tres partes :
 
 #### A) Parte 1:
-          Conceptos basicos 
-          Operadores Arigmético
+          Operadores Arigméticos
           Sentencias de Condicionales
-    
-    
+        
 ####  B) Parte 2:
           Ciclo For
           Ciclo While

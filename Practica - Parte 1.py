@@ -111,7 +111,7 @@ cantidadHombres = int(input('Ingrese la cantidad de hombres: '))
 cantidadMujeres = int(input('Ingrese la cantidad de mujeres: '))
 porcentajeHombres = (cantidadHombres * 100) / (cantidadMujeres + cantidadHombres)
 porcentajeMujeres = (cantidadMujeres * 100) / (cantidadMujeres + cantidadHombres)
-print(f'El porcentaje de hombres incriptos es de {porcentajeHombres}% y de mujeres {porcentajeMujeres}%')
+print(f'El porcentaje de hombres inscriptos es de {porcentajeHombres}% y de mujeres {porcentajeMujeres}%')
 
 #-------------------------------------------------------------------------------------------------------------------
 #Determinar  cual de los dos valores es el mayor
@@ -126,7 +126,6 @@ elif numero1 == numero2:
 else:
     print(f'El segundo número es el mayor, {numero2}')
 
-
 #Determinar si el valor ingresado es Par o  Impar:
 
 valorNumerico = int(input('Ingrese un valor numerico:'))
@@ -135,3 +134,24 @@ if valorNumerico % 2 == 0:
     print('El numero es par')
 else:
     print('El numero es impar')
+
+# Hacer un programa para ingresar un número y luego se emita un cartel por
+# pantalla “Positivo” si el número es mayor a cero, “Negativo” si el número es
+# menor a cero o “Cero” si el número es igual a cero.
+
+numeroEvaludo = int(input('Ingrese el valor numerico a evaluar: '))
+
+if numeroEvaludo > 0 :
+    print(f'El número {numeroEvaludo}, es positivo')
+elif numeroEvaludo < 0:
+    print(f'El número {numeroEvaludo}, es negativo')
+else:
+    print(f'El número {numeroEvaludo}, es cero y por lo tanto es neutro')
+
+# Una casa de video juegos otorga un descuento dependiendo del importe de la
+# compra realizada según los siguientes valores:
+# • Si el importe es menor a ARS 1000, no hay descuento.
+# • Si el importe es ARS 1000 o más pero menor a ARS 5000, aplica un
+# descuento del 10%.
+# • Si el importe es ARS 5000 o más, aplica un descuento del 18%.
+
