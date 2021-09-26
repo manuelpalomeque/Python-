@@ -156,6 +156,7 @@ else:
 # • Si el importe es ARS 5000 o más, aplica un descuento del 18%.
 
 importeCompra = float(input('Ingrese el monto de la compra: '))
+importeConDescuento = None
 
 if importeCompra < 1000:
     print(f'El monto es inferior a lo solicitado, por ende no hay descuento. Monto a abonar: ${importeCompra}')
@@ -172,6 +173,7 @@ elif importeCompra >= 5000:
 # horas.
 
 minutos = int(input('Ingresar la cantidad en minutos: '))
+valorEnHs = None
 
 if minutos >= 60:
     valorEnHs = minutos / 60
@@ -209,3 +211,90 @@ else:
     print('ingrese un valor dentro del rango del  1 al 12')
 
 print(f'Para el mes {mes} , la estacion es {estacion}')
+
+# Hacer un programa que solicite el ingreso de un número y que luego emita un
+# cartel por pantalla aclarando si el mismo es múltiplo de 5.
+numMultiplo = int(input('Ingrese el valor a consultar: '))
+
+if numMultiplo % 5 == 0:
+    print(f'El numero {numMultiplo} es multiplo de 5')
+else:
+    print(f'El numero {numMultiplo} no es multiplo de 5')
+
+# Hacer un programa que solicite el ingreso de dos números y luego calcular:
+# a. La resta si el primero es mayor que el segundo.
+# b. La suma si son iguales.
+# c. El producto si el primero es menor.
+# Se deberá emitir un cartel por pantalla con el resultado correspondiente.
+
+num1 = int(input('Ingrese el primer numero: '))
+num2 = int(input('Ingrese el segundo numero: '))
+resultado = None
+
+if num1 > num2:
+    resultado = num1 - num2
+    print(f' Se efectuo la resta de los numeros y el resultado es: {resultado}')
+elif num1 == num2:
+    resultado = num1 + num2
+    print(f'Se efectuo una suma, el resultado es {resultado}')
+else:
+    resultado = num1 * num2
+    print(f'Se calculo el producto, el resultado es {resultado}')
+
+# Hacer un programa para ingresar dos números. Si el segundo es distinto de
+# cero, calcular la división del primero por el segundo y mostrar el resultado por
+# pantalla; caso contrario, emitir un cartel aclarando que no se puede dividir por
+# cero.
+valor_1 = int(input('Ingrese el primer numero: '))
+valor_2 = int(input('Ingrese el segundo numero: '))
+resul = None
+
+if valor_2 != 0:
+    resul = valor_1 / valor_2
+    print(f'El resultado de la division es {resul}')
+else:
+    print('No se puede dividir por cero')
+
+# Un importante negocio de desinfectante líquido realiza descuentos
+# dependiendo de la cantidad de litros vendidos según la siguiente escala:
+# a. Si vende menos de 100 litros, no hay descuento.
+# b. Si vende entre 101 y 300 litros, el descuento es del 10%.
+# c. Si vende entre 301 y 500 litros, el descuento es del 15%.
+# d. Finalmente, si la venta es de más de 500 litros, el descuento es del 25%.
+# Hacer un programa que solicite el ingreso del importe total de la venta y la
+# cantidad de litros vendidos y calcule y emita el importe con el descuento
+# aplicado.
+
+cantidadLitrosVendidos = float(input('Ingrese la cantidad de litros vendidos: '))
+montoSinDescuento = float(input('Ingrese el monto a cobrar: '))
+totalAbonar = None
+
+if cantidadLitrosVendidos <= 100:
+    print(f'No se aplica descuento, debe abonar ${montoSinDescuento}')
+elif cantidadLitrosVendidos > 100 and cantidadLitrosVendidos <= 300:
+    totalAbonar = montoSinDescuento * 0.9
+    print(f'Se aplica un descuento del  10% y el monto a cobrar es ${totalAbonar}')
+elif cantidadLitrosVendidos > 300 and cantidadLitrosVendidos < 500:
+    totalAbonar = montoSinDescuento * 0.85
+    print(f'Se aplica descuento del  15% y el monto a abonar es de ${totalAbonar}')
+else:
+    totalAbonar= montoSinDescuento * 0.75
+    print(f'Se aplica un descuento del 25% y el monto a abonar es de ${totalAbonar}')
+
+#  Hacer un programa para ingresar por teclado la longitud de los tres lados de un
+# triángulo y que luego determine e informe con un cartel aclaratorio a qué tipo
+# de triángulo corresponde:
+# a. Equilátero: cuando los tres lados sean iguales.
+# b. Isósceles: cuando dos de los tres lados sean iguales.
+# c. Escaleno: cuando todos los lados sean distintos.
+
+long1 = float(input('Ingrese la longuitud del primer lado: '))
+long2 = float(input('Ingrese la longuitud del segundo lado: '))
+long3 = float(input('Ingrese la longuitud del tercer lado: '))
+
+if long1 == long2 and long1 == long3:
+    print('El triangulo es equilatero, tiene sus tres lados iguales ')
+elif long1 == long2 or  long2 == long3 or long3 == long1:
+    print('El triangulo es isóceles, dos de sus lados son iguales')
+else:
+    print('El triangulo es escaleno, ninguno de sus lados son iguales')
