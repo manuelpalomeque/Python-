@@ -1,3 +1,4 @@
+#CICLO WHILE    ---------------------------------------------------------------------------
 #aumentar valor de  2 en 2, hasta llegar al  250:
 
 contador = 0
@@ -7,7 +8,7 @@ while contador <= 250:
     contador += 2
 else:
     print('Fin del ciclo ')
-
+#CICLO FOR  -----------------------------------------------------------------------------
 # iterar un rango de 0 a 10 e imprimir numeros divisibles
 # entre 3
 
@@ -16,6 +17,11 @@ for i in range(10):
         print(i)
 else:
     print('Fin del ciclo')
+
+#LISTAS     ----------------------------------------------------------------------------
+
+
+#TUPLAS     ----------------------------------------------------------------------------
 
 # Hacer un programa para ingresar cinco números distintos y luego mostrar por
 # pantalla el mayor y el menor de ellos.
