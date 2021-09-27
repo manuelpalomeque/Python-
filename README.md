@@ -14,6 +14,8 @@ todo el avance que haga lo subire acá.
 ####  B) Parte 2:
           Ciclo For
           Ciclo While
+          Listas
+          Tuplas
    
 ####  C) Parte 3:
           Clases
