@@ -40,6 +40,16 @@ while contador <= 250:
 else:
     print('Fin del ciclo ')
 
+# Hacer un programa que muestre los números del 1 al 100 de 5 en 5. Ejemplo:
+# 0, 5, 10, 15, 20.... 100.
+cont = 0
+
+while cont <= 100:
+    print(cont)
+    cont += 5
+else:
+    print('Fin del ciclo')
+
 #CICLO FOR  -----------------------------------------------------------------------------
 # Hacer un programa para mostrar los números del 1 al 10. No se debe realizar
 # ningún pedido de datos.
@@ -48,6 +58,14 @@ contador1 = 0
 for x in range(10):
     contador1 += 1
     print(contador1)
+
+# Hacer un programa para mostrar los números del 10 al 1. No se debe realizar
+# ningún pedido de datos.
+contador2 = 11
+
+for x in range(10):
+    contador2 -= 1
+    print(contador2)
 
 # iterar un rango de 0 a 10 e imprimir numeros divisibles
 # entre 3
@@ -86,12 +104,6 @@ for x in range(20):
         contadorPositivos += 1
 else:
     print(f'La cantidad de numeros positivos son: {contadorPositivos}')
-
-# Hacer un programa para mostrar los números del 10 al 1. No se debe realizar
-# ningún pedido de datos.
-
-# Hacer un programa que muestre los números del 1 al 100 de 5 en 5. Ejemplo:
-# 0, 5, 10, 15, 20.... 100.
 
 # Hacer un programa que solicite UN número y luego calcule y emita un cartel
 # aclaratorio si el mismo es primo o no es primo.
