@@ -1,4 +1,14 @@
 #LISTAS     ----------------------------------------------------------------------------
+# Dada la siguiente tupla, crear una lista que sólo incluya
+# los números menor que 5 utilizando un ciclo for.
+tupla = (13, 1, 8, 3, 2, 5, 8)
+lista = []
+
+for numero in tupla:
+    if numero < 5:
+        lista.append(numero)
+else:
+    print(lista)
 
 # Transformar cada numero multiplicandolo por 2
 
@@ -22,7 +32,6 @@
 
 #CICLO WHILE    ---------------------------------------------------------------------------
 #aumentar valor de  2 en 2, hasta llegar al  250:
-
 contador = 0
 
 while contador <= 250:
@@ -51,7 +60,6 @@ else:
 
 # Hacer un programa que solicite el ingreso de 10 números y que muestre el
 # mayor de ellos por pantalla. Solo se debe emitir UN valor por pantalla.
-
 numeros = []
 valor = None
 numeroMayor = 0
@@ -67,7 +75,6 @@ else:
 # Hacer un programa que solicite 20 números y calcule y emita por pantalla
 # cuántos son positivos (mayores a cero). Se debe mostrar un solo valor: el
 # conteo final.
-
 numerosEvaluar = []
 contadorPositivos = 0
 valor1 = None
