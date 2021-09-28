@@ -107,8 +107,22 @@ else:
 
 # Hacer un programa que solicite UN número y luego calcule y emita un cartel
 # aclaratorio si el mismo es primo o no es primo.
-# Nota: un numero es primo cuando es divisible únicamente por 1 y por sí
-# mismo.
+
+num = int(input('Ingrese el numero a evaluar si es primo: '))
+cont = 0
+
+if num > 1:
+    for x in range(2, num):
+        resto = num % x
+        if resto == 0:
+            cont += 1
+    if cont == 0:
+        print(f'El numero {num}, es primo')
+    else:
+        print('El numero no es primo')
+else:
+    print(f' El valor {num}, no es primo')
+
 
 # Hacer un programa que solicite 10 números y luego mostrar por pantalla el
 # máximo de ellos y la posición en la que fue ingresado.
