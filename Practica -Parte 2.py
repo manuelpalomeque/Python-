@@ -126,9 +126,28 @@ else:
 
 # Hacer un programa que solicite 10 números y luego mostrar por pantalla el
 # máximo de ellos y la posición en la que fue ingresado.
+numMayor = 0
+contPosicion = 0
+
+for x in range(10):
+    valores = int(input('Por favor ingrese el valor: '))
+    if valores > numMayor:
+        numMayor = valores
+        contPosicion += 1
+    if x == 9:
+        print(f' El numero mayor es {numMayor} y se ingreso en la  posicion {contPosicion}')
 
 # Hacer un programa que solicite 20 números y luego mostrar por pantalla el
 # menor de ellos y la posición en la que fue encontrado.
+numMen = 0
+
+for x in range(20):
+    valoresMinimos = int(input('Por favor ingrese el valor: '))
+    if valoresMinimos < numMen:
+        numMen = valoresMinimos
+        contPosicionMenor = x + 1
+    if x == 19:
+        print(f' El numero mayor es {numMen} y se ingreso en la  posicion {contPosicionMenor}')
 
 # Hacer un programa que solicite 20 edades y luego calcule el promedio de edad
 # de aquellas personas mayores a 18 años.
