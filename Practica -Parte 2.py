@@ -108,21 +108,17 @@ else:
 # Hacer un programa que solicite UN número y luego calcule y emita un cartel
 # aclaratorio si el mismo es primo o no es primo.
 
-num = int(input('Ingrese el numero a evaluar si es primo: '))
 cont = 0
+valor= int(input('Ingrese los valores: '))
 
-if num > 1:
-    for x in range(2, num):
-        resto = num % x
-        if resto == 0:
-            cont += 1
-    if cont == 0:
-        print(f'El numero {num}, es primo')
-    else:
-        print('El numero no es primo')
+for x in range(1, valor):
+    if  valor % x == 0:
+        cont += 1
+
+if cont == 2:
+    print('El numero es primo')
 else:
-    print(f' El valor {num}, no es primo')
-
+    print('No es primo')
 
 # Hacer un programa que solicite 10 números y luego mostrar por pantalla el
 # máximo de ellos y la posición en la que fue ingresado.
@@ -139,15 +135,16 @@ for x in range(10):
 
 # Hacer un programa que solicite 20 números y luego mostrar por pantalla el
 # menor de ellos y la posición en la que fue encontrado.
-numMen = 0
 
 for x in range(20):
     valoresMinimos = int(input('Por favor ingrese el valor: '))
-    if valoresMinimos < numMen:
+    if x == 0:
         numMen = valoresMinimos
-        contPosicionMenor = x + 1
-    if x == 19:
-        print(f' El numero mayor es {numMen} y se ingreso en la  posicion {contPosicionMenor}')
+    elif valoresMinimos < numMen:
+        numMen = valoresMinimos
+        posicionMinimo = x +1
+    elif x == 19:
+        print(f'El numero menor es {numMen} y se ingreso en la posicion {posicionMinimo}'
 
 # Hacer un programa que solicite 20 edades y luego calcule el promedio de edad
 # de aquellas personas mayores a 18 años.
@@ -159,7 +156,7 @@ for x in range(20):
     if edades > 18:
         suma += edades
         contPersonasMas18 += 1
-    if x == 19:
+    elif x == 19:
         promedioEdades = suma / contPersonasMas18
         print(f'El promedio de edades es {promedioEdades}')
 
