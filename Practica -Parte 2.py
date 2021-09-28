@@ -166,6 +166,23 @@ for x in range(20):
 # Hacer un programa que solicite 20 números y luego emitir por pantalla el
 # máximo de los números pares y el mínimo de los números impares.
 
+for x in range(20):
+    numero_ = int(input('Ingrese los numeros: '))
+    if x == 1:
+        if numero_ % 2 == 0:
+            maxPares = numero_
+        elif numero_ % 2 == 1:
+            minImpares = numero_
+    elif x == 19:
+        print(f' El maximo de los numeros pares es {maxPares} y el minimo de impares es {minImpares}')
+    else:
+        if numero_ % 2 == 0:
+            if numero_ > maxPares:
+                maxPares = numero_
+        elif numero_ % 2 == 1:
+            if numero_ < minImpares:
+                minImpares = numero_
+
 # Hacer un programa para ingresar 10 números y luego calcule y emita el mayor
 # de los primos de la lista. En caso de no haber ningún número primo, deberá
 # aclararlo con un cartel.
