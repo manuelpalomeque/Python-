@@ -151,6 +151,17 @@ for x in range(20):
 
 # Hacer un programa que solicite 20 edades y luego calcule el promedio de edad
 # de aquellas personas mayores a 18 años.
+contPersonasMas18 = 0
+suma = 0
+
+for x in range(20):
+    edades = int(input('Ingrese las edades: '))
+    if edades > 18:
+        suma += edades
+        contPersonasMas18 += 1
+    if x == 19:
+        promedioEdades = suma / contPersonasMas18
+        print(f'El promedio de edades es {promedioEdades}')
 
 # Hacer un programa que solicite 20 números y luego emitir por pantalla el
 # máximo de los números pares y el mínimo de los números impares.
