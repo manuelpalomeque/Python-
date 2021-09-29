@@ -35,7 +35,7 @@ else:
 contador = 0
 
 while contador <= 250:
-    print('El valor es: ', contador)
+    print(f'El valor es: {contador}')
     contador += 2
 else:
     print('Fin del ciclo ')
@@ -135,6 +135,8 @@ for x in range(10):
 
 # Hacer un programa que solicite 20 números y luego mostrar por pantalla el
 # menor de ellos y la posición en la que fue encontrado.
+numMen = None
+posicionMinimo = None
 
 for x in range(20):
     valoresMinimos = int(input('Por favor ingrese el valor: '))
@@ -144,25 +146,13 @@ for x in range(20):
         numMen = valoresMinimos
         posicionMinimo = x +1
     elif x == 19:
-        print(f'El numero menor es {numMen} y se ingreso en la posicion {posicionMinimo}'
+        print(f'El numero menor es {numMen} y se ingreso en la posicion {posicionMinimo}')
 
 # Hacer un programa que solicite 20 edades y luego calcule el promedio de edad
 # de aquellas personas mayores a 18 años.
-contPersonasMas18 = 0
-suma = 0
-
-for x in range(20):
-    edades = int(input('Ingrese las edades: '))
-    if edades > 18:
-        suma += edades
-        contPersonasMas18 += 1
-    elif x == 19:
-        promedioEdades = suma / contPersonasMas18
-        print(f'El promedio de edades es {promedioEdades}')
-
 # Hacer un programa que solicite 20 números y luego emitir por pantalla el
 # máximo de los números pares y el mínimo de los números impares.
-
+#
 # Hacer un programa para ingresar 10 números y luego calcule y emita el mayor
 # de los primos de la lista. En caso de no haber ningún número primo, deberá
 # aclararlo con un cartel.
