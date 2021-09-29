@@ -87,8 +87,8 @@ for x in range(10):
     numeros.append(valor)
     if valor > numeroMayor:
         numeroMayor = valor
-else:
-    print(f'Él numero mas alto es {numeroMayor}, fin del ciclo')
+
+print(f'Él numero mas alto es {numeroMayor}, fin del ciclo')
 
 # Hacer un programa que solicite 20 números y calcule y emita por pantalla
 # cuántos son positivos (mayores a cero). Se debe mostrar un solo valor: el
@@ -102,8 +102,8 @@ for x in range(20):
     numerosEvaluar.append(valor1)
     if valor1 > 0:
         contadorPositivos += 1
-else:
-    print(f'La cantidad de numeros positivos son: {contadorPositivos}')
+
+print(f'La cantidad de numeros positivos son: {contadorPositivos}')
 
 # Hacer un programa que solicite UN número y luego calcule y emita un cartel
 # aclaratorio si el mismo es primo o no es primo.
@@ -129,9 +129,9 @@ for x in range(10):
     valores = int(input('Por favor ingrese el valor: '))
     if valores > numMayor:
         numMayor = valores
-        contPosicion += 1
-    if x == 9:
-        print(f' El numero mayor es {numMayor} y se ingreso en la  posicion {contPosicion}')
+        contPosicion = x +1
+
+print(f' El numero mayor es {numMayor} y se ingreso en la  posicion {contPosicion}')
 
 # Hacer un programa que solicite 20 números y luego mostrar por pantalla el
 # menor de ellos y la posición en la que fue encontrado.
@@ -145,8 +145,8 @@ for x in range(20):
     elif valoresMinimos < numMen:
         numMen = valoresMinimos
         posicionMinimo = x +1
-    elif x == 19:
-        print(f'El numero menor es {numMen} y se ingreso en la posicion {posicionMinimo}')
+
+ print(f'El numero menor es {numMen} y se ingreso en la posicion {posicionMinimo}')
 
 # Hacer un programa que solicite 20 edades y luego calcule el promedio de edad
 # de aquellas personas mayores a 18 años.
@@ -158,12 +158,25 @@ for z in range(20):
     if edades_ > 18:
         sumarEdades = sumarEdades + edades_
         contadorPromedio_ += 1
-    if z == 19:
-        promedioEdades_ = sumarEdades / contadorPromedio_
-        print(f'El promedio de edades  es de: {promedioEdades_}')
+
+promedioEdades_ = sumarEdades / contadorPromedio_
+print(f'El promedio de edades  es de: {promedioEdades_}')
 
 # Hacer un programa que solicite 20 números y luego emitir por pantalla el
 # máximo de los números pares y el mínimo de los números impares.
+maxPar_ = 0
+minImpar_ = 0
+
+for m in range(20):
+    parOImpar = int(input('Ingrese  numeros: '))
+    if parOImpar % 2 == 0:
+        if parOImpar > maxPar_:
+            maxPar_ = parOImpar
+    else:
+        if parOImpar < minImpar_:
+            minImpar_ = parOImpar
+
+print(f' El maximo de los numeros pares es {maxPar_} y el minimo de los impares es {minImpar_}')
 
 
 # Hacer un programa para ingresar 10 números y luego calcule y emita el mayor
