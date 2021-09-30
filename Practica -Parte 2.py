@@ -73,13 +73,22 @@ else:
 
 # Hacer un programa que solicite dos números y luego muestre los números
 # entre el menor y el mayor de ellos. Acordate, usando While.
+n1 = int(input('Ingrese el primer numero: '))
+n2 = int(input('Ingrese el segundo numero: '))
 
-# Hacer un programa que muestre los números del 1 al 100 de 5 en 5. Ejemplo:
-# 0, 5, 10, 15, 20.... 100. Usando While.
+if n1 > n2:
+    mayor = n1
+    menor = n2
+else:
+    mayor = n2
+    menor = n1
+while menor < mayor:
+    print(menor)
+    menor += 1
 
 # Hacer un programa que solicite UN número y luego calcule y emita un cartel
 # aclaratorio si el mismo es primo o no es primo.
-# Nota: usando While. Ya lo hicimos con FOR, ahora con While.
+# Nota: usando While.
 
 # Hacer un programa que solicite una lista de números que corta cuando se
 # ingresa un cero y luego mostrar por pantalla el máximo de ellos y la posición
