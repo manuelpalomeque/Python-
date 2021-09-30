@@ -50,15 +50,26 @@ while cont <= 100:
 else:
     print('Fin del ciclo')
 
-# Hacer un programa para mostrar los números del 1 al 10. No se debe realizar
-# ningún pedido de datos. USANDO WHILE.
-
 # Hacer un programa para mostrar los números del 10 al 1. No se debe realizar
 # ningún pedido de datos. USANDO WHILE.
+cont1_ = 10
+
+while cont1_ >= 1:
+    print(cont1_)
+    cont1_ -= 1
 
 # Hacer un programa que solicite la edad de un grupo de personas. El programa
 # deberá pedir edades hasta que se ingrese una edad menor a 18 años. Deberá
 # mostrar por pantalla cuántas personas mayores se registraron.
+contPerMayores = 0
+edad = int(input('Ingrese la edad: '))
+
+while edad >= 18:
+    contPerMayores += 1
+    edad = int(input('Ingrese la edad: '))
+
+else:
+    print(f'La contidad de personas mayores de 18 años es {contPerMayores}')
 
 # Hacer un programa que solicite dos números y luego muestre los números
 # entre el menor y el mayor de ellos. Acordate, usando While.
