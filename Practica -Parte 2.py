@@ -77,18 +77,32 @@ n1 = int(input('Ingrese el primer numero: '))
 n2 = int(input('Ingrese el segundo numero: '))
 
 if n1 > n2:
-    mayor = n1
-    menor = n2
+    mayor_ = n1
+    menor_ = n2
 else:
-    mayor = n2
-    menor = n1
-while menor < mayor:
-    print(menor)
-    menor += 1
+    mayor_ = n2
+    menor_ = n1
+while menor_ < mayor_:
+    print(menor_)
+    menor_ += 1
 
 # Hacer un programa que solicite UN número y luego calcule y emita un cartel
 # aclaratorio si el mismo es primo o no es primo.
 # Nota: usando While.
+con_primos = 0
+vueltas_primos = 1
+
+v1 = int(input('Ingrese el valor a evaluar: '))
+
+while vueltas_primos <= v1:
+    if v1 % vueltas_primos == 0:
+        con_primos += 1
+    vueltas_primos += 1
+
+if con_primos == 2:
+    print('El numero es primo')
+else:
+    print('El numero no es primo')
 
 # Hacer un programa que solicite una lista de números que corta cuando se
 # ingresa un cero y luego mostrar por pantalla el máximo de ellos y la posición
