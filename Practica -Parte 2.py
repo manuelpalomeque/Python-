@@ -107,6 +107,19 @@ else:
 # Hacer un programa que solicite una lista de números que corta cuando se
 # ingresa un cero y luego mostrar por pantalla el máximo de ellos y la posición
 # en la que fue ingresado.
+number = int(input('Por favor ingrese el numero: '))
+contNumber = 0
+maxNumber = None
+
+while number != 0:
+    if contNumber == 0:
+        maxNumber = number
+    elif number > maxNumber:
+        maxNumber = number
+    contNumber += 1
+    number = int(input('Por favor ingrese el numero: '))
+else:
+    print(f'El numero mas grande es {maxNumber} y se ingreso en la posicion {contNumber}')
 
 # Hacer un programa que solicite una lista de números que corta cuando se
 # ingresa un cero y luego mostrar por pantalla el menor y el segundo menor.
