@@ -123,6 +123,21 @@ else:
 
 # Hacer un programa que solicite una lista de números que corta cuando se
 # ingresa un cero y luego mostrar por pantalla el menor y el segundo menor.
+number_ = int(input('Por favor ingrese el numero: '))
+firstNumber_ = 0
+minNumber1_ = None
+minNumber2_ = None
+
+while number_ != 0:
+    if firstNumber_ == 0:
+        minNumber1_ = number_
+        firstNumber_ += 1
+    elif number_ < minNumber1_:
+        minNumber2_ = minNumber1_
+        minNumber1_ = number_
+    number_ = int(input('Por favor ingrese el numero: '))
+else:
+    print(f'El numero menor es {minNumber1_} y el segundo menor es {minNumber2_}')
 
 # Realizar el nuevamente el ejercicio 8 pero ahora debe devolver además la
 # posición en la que fue encontrado cada uno de los mínimos.
