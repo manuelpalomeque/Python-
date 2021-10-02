@@ -123,24 +123,29 @@ else:
 
 # Hacer un programa que solicite una lista de números que corta cuando se
 # ingresa un cero y luego mostrar por pantalla el menor y el segundo menor.
+#además indicar la posición en la que fue encontrado cada uno de los mínimos.
 number_ = int(input('Por favor ingrese el numero: '))
-firstNumber_ = 0
+pGlobal = 0
 minNumber1_ = None
 minNumber2_ = None
+pMin1 = 0
+pMin2 = 0
 
 while number_ != 0:
-    if firstNumber_ == 0:
+    if pGlobal == 0:
         minNumber1_ = number_
-        firstNumber_ += 1
+        pMin1 += 1
+        pGlobal += 1
     elif number_ < minNumber1_:
         minNumber2_ = minNumber1_
         minNumber1_ = number_
+        pMin2 = pMin1
+        pMin1 = pGlobal
     number_ = int(input('Por favor ingrese el numero: '))
+    pGlobal += 1
 else:
-    print(f'El numero menor es {minNumber1_} y el segundo menor es {minNumber2_}')
-
-# Realizar el nuevamente el ejercicio 8 pero ahora debe devolver además la
-# posición en la que fue encontrado cada uno de los mínimos.
+    print(f'El numero menor es {minNumber1_} y se ingreso en la posicion {pMin1}, el segundo menor es {minNumber2_} '
+          f'y se ingreso en la posicion {pMin2}')
 
 # Hacer un programa que solicite una lista de números que corta cuando se
 # ingresa un cero y luego emitir por pantalla el máximo de los números
