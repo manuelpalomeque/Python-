@@ -12,11 +12,12 @@ todo el avance que haga lo subire acá.
           Operadores Logicos
         
 ####  B) Parte 2:
-          Ciclo For
-          Ciclo While
+          Funciones
           Listas
           Tuplas
-   
+          Ciclo While
+          Ciclo For
+             
 ####  C) Parte 3:
           Clases
           POO
