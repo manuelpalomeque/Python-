@@ -377,13 +377,33 @@ for o in range(len(lista)):
 else:
     print(f'El resultado de los valores de la lista multiplicado por 2 es: {lista}')
 
-#TUPLAS     ----------------------------------------------------------------------------
+# Hacer un programa para ingresar cinco números distintos, formar una lista,
+# y luego mostrar por pantalla el mayor y el menor de ellos.
+lista1_ = []
+x = 0
 
-# Hacer un programa para ingresar cinco números distintos y luego mostrar por
-# pantalla el mayor y el menor de ellos.
+while x in range(5):
+    num_lista1_ = int(input('Ingrese el numero: '))
+    lista1_.append(num_lista1_)
+    x += 1
+else:
+    print(f'El valor mayor es {max(lista1_)} y el menos es {min(lista1_)}')
 
-# Hacer un programa para ingresar cuatro números y luego mostrar por pantalla
-# cuáles son mayores a 100.
+# Hacer un programa para ingresar cuatro números, formar una lista
+# y luego mostrar por cuáles son mayores a 100.
+lista2_ = []
+q = 0
 
-# Hacer un programa para ingresar cuatro números y luego mostrar por pantalla
-# cuántos son menores a 100.
+for q in range(4):
+    numb_lista2 = int(input('Ingrese el numero: '))
+    lista2_.append(numb_lista2)
+    q += 1
+
+def mayor100(nume):
+    return (nume > 100)
+
+numeros_mayores = list(filter(mayor100, lista2_))
+print(f'los numeros mayores a 100 son: {numeros_mayores}')
+
+# Hacer un programa para ingresar cuatro números, formar una lista
+# y luego mostrar por cuántos son menores a 100.
