@@ -407,3 +407,16 @@ print(f'los numeros mayores a 100 son: {numeros_mayores}')
 
 # Hacer un programa para ingresar cuatro números, formar una lista
 # y luego mostrar por cuántos son menores a 100.
+list_3 = []
+s = 0
+
+for s in range(4):
+    val_num = int(input('Ingrese el numero: '))
+    list_3.append(val_num)
+    s += 1
+
+def menor100_(numer):
+    return  numer < 100
+
+menores_100 = list(filter(menor100_, list_3))
+print(f'Los numeros menores a 100 son : {menores_100}')
