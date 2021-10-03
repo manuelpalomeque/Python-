@@ -4,13 +4,19 @@
 tupla = (13, 1, 8, 3, 2, 5, 8)
 lista = []
 
-for numero in tupla:
-    if numero < 5:
-        lista.append(numero)
+for t in tupla:
+    if t < 5:
+        lista.append(t)
 else:
-    print(lista)
+    print(f'Los numeros menores de 5 son: {lista}')
 
-# Transformar cada numero multiplicandolo por 2
+# Transformar cada numero  de la lista que se formo en el el ejercicio anterior
+# , multiplicandolo por 2
+
+for o in range(len(lista)):
+    lista[o] = lista[o] * 2
+else:
+    print(f'El resultado de los valores de la lista multiplicado por 2 es: {lista}')
 
 # Filtrar las comidas que no sean carne
 # Encuentra y devuelve la gallina
@@ -67,7 +73,6 @@ edad = int(input('Ingrese la edad: '))
 while edad >= 18:
     contPerMayores += 1
     edad = int(input('Ingrese la edad: '))
-
 else:
     print(f'La contidad de personas mayores de 18 años es {contPerMayores}')
 
@@ -88,7 +93,6 @@ while menor_ < mayor_:
 
 # Hacer un programa que solicite UN número y luego calcule y emita un cartel
 # aclaratorio si el mismo es primo o no es primo.
-# Nota: usando While.
 con_primos = 0
 vueltas_primos = 1
 
@@ -172,7 +176,6 @@ while num_ingresados != 0:
     if num_ingresados >= 1 and num_ingresados < minPos:
         minPos = num_ingresados
     num_ingresados = int(input('Ingrese el numero: '))
-
 else:
     print(f'El maximo de los numeros negativos es {maxNeg} y el minimo de los positivos es {minPos}')
 
@@ -201,7 +204,6 @@ while nIngresado_ != 0:
     if contPri_ == 2:
         cantPri_ += 1
     nIngresado_ = int(input('Ingrese el numero: '))
-
 else:
     print(f'''La cantidad de: 
             numeros primos: {cantPri_},
@@ -303,9 +305,9 @@ for x in range(20):
         numMen = valoresMinimos
     elif valoresMinimos < numMen:
         numMen = valoresMinimos
-        posicionMinimo = x +1
-
- print(f'El numero menor es {numMen} y se ingreso en la posicion {posicionMinimo}')
+        posicionMinimo = x + 1
+else:
+    print(f'El numero menor es {numMen} y se ingreso en la posicion {posicionMinimo}')
 
 # Hacer un programa que solicite 20 edades y luego calcule el promedio de edad
 # de aquellas personas mayores a 18 años.
