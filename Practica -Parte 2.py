@@ -150,6 +150,31 @@ else:
 # Hacer un programa que solicite una lista de números que corta cuando se
 # ingresa un cero y luego emitir por pantalla el máximo de los números
 # negativos y el mínimo de los números positivos.
+ban_ = 0
+maxNeg = 0
+minPos = 0
+num_ingresados = int(input('Ingrese el numero: '))
+
+while num_ingresados != 0:
+    if ban_ == 0:
+        if num_ingresados > 0:
+            minPos = num_ingresados
+        elif num_ingresados < 0:
+            maxNeg = num_ingresados
+        ban_ += 1
+    elif minPos == 0 or maxNeg == 0:
+        if minPos == 0 and num_ingresados > 0:
+            minPos = num_ingresados
+        elif maxNeg == 0 and num_ingresados < 0:
+            maxNeg = num_ingresados
+    if num_ingresados < 0 and num_ingresados < maxNeg:
+        maxNeg = num_ingresados
+    if num_ingresados >= 1 and num_ingresados < minPos:
+        minPos = num_ingresados
+    num_ingresados = int(input('Ingrese el numero: '))
+
+else:
+    print(f'El maximo de los numeros negativos es {maxNeg} y el minimo de los positivos es {minPos}')
 
 # Hacer un programa para ingresar una lista de números que corta cuando se
 # ingresa un cero y luego mostrar: la cantidad de números primos, la cantidad de
