@@ -1,43 +1,3 @@
-#FUNCIONES -----------------------------------------------------------------------------
-# Filtrar las comidas que no sean carne
-# Encuentra y devuelve la gallina
-# Dime donde esta la gallina
-# Rellenar la lista de dinero
-# esta bien?
-# Hay algun error?
-
-
-#LISTAS     ----------------------------------------------------------------------------
-# Dada la siguiente tupla, crear una lista que sólo incluya
-# los números menor que 5 utilizando un ciclo for.
-tupla = (13, 1, 8, 3, 2, 5, 8)
-lista = []
-
-for t in tupla:
-    if t < 5:
-        lista.append(t)
-else:
-    print(f'Los numeros menores de 5 son: {lista}')
-
-# Transformar cada numero  de la lista que se formo en el el ejercicio anterior
-# , multiplicandolo por 2
-
-for o in range(len(lista)):
-    lista[o] = lista[o] * 2
-else:
-    print(f'El resultado de los valores de la lista multiplicado por 2 es: {lista}')
-
-#TUPLAS     ----------------------------------------------------------------------------
-
-# Hacer un programa para ingresar cinco números distintos y luego mostrar por
-# pantalla el mayor y el menor de ellos.
-
-# Hacer un programa para ingresar cuatro números y luego mostrar por pantalla
-# cuáles son mayores a 100.
-
-# Hacer un programa para ingresar cuatro números y luego mostrar por pantalla
-# cuántos son menores a 100.
-
 #CICLO WHILE    ---------------------------------------------------------------------------
 #aumentar valor de  2 en 2, hasta llegar al  250:
 contador = 0
@@ -340,3 +300,90 @@ for m in range(20):
             minImpar_ = parOImpar
 
 print(f' El maximo de los numeros pares es {maxPar_} y el minimo de los impares es {minImpar_}')
+
+#FUNCIONES -----------------------------------------------------------------------------
+
+# Hacer una función llamada “producto” que reciba dos números enteros y que
+# devuelva el producto de ambos. Luego hacer un programa que pida el precio
+# de un artículo y la cantidad vendida y muestre por pantalla el monto total a
+# pagar. Usar la función.
+
+# Hacer una función llamada “mayor” que reciba dos números enteros y
+# devuelva el mayor de ellos o cero si son iguales.
+
+# Hacer una función llamada “par” que reciba un número entero y devuelva 1 si
+# es par o cero si no lo es. Hacer un programa para ingresar 20 números y
+# mostrar por pantalla cuántos son pares.
+
+# Hacer una función llamada “primo” que reciba un número entero y devuelva 1
+# si el número es primo o cero si no lo es. Hacer un programa para ingresar
+# números. El lote corta cuando se ingresa un número cero. Informar el
+# promedio teniendo en cuenta sólo los números primos.
+
+# Hacer una función llamada “pagos” que reciba un monto (float) y una cantidad
+# de pagos (entero) y devuelva el monto de cada pago. Hacer un programa para
+# ingresar 10 ventas. Para cada venta se conoce el monto y la cantidad de pagos.
+# El programa deberá mostrar la cantidad de pagos y el monto del pago para
+# cada una de las ventas.
+
+# Hacer una función que se llame “sumaResta” que reciba dos números y que
+# devuelva la suma Y la resta del primer número con el segundo.
+# Nota: recordemos que una función solo puede devolver UN valor por return.
+# Cómo podríamos hacer para tener ambos resultados en el main?
+
+# Hacer una función de tipo void (porque no va a devolver nada) llamada
+# “positivoNegativoCero” que reciba un número por valor y una variable por
+# referencia. Que analice el número y escriba variable recibida por referencia
+# con:
+# a. 1 si el número es positivo.
+# b. -1 si el número es negativo.
+# c. 0 si el número es cero.
+
+# Hacer un programa main que permita ingresar 100 números y emitir por
+# pantalla cuántos son positivos, cuántos negativos y cuántos cero.
+
+# Hacer un programa que permita ingresar una lista de números que corta
+# cuando se ingresa un cero. A partir de dichos datos informar:
+# a. El mayor de los números pares.
+# b. La cantidad de números impares.
+# c. El menor de los números primos.
+# Hacer uso de las funciones anteriormente desarrolladas.
+
+# Filtrar las comidas que no sean carne
+# Encuentra y devuelve la gallina
+# Dime donde esta la gallina
+# Rellenar la lista de dinero
+# esta bien?
+# Hay algun error?
+
+
+#LISTAS     ----------------------------------------------------------------------------
+# Dada la siguiente tupla, crear una lista que sólo incluya
+# los números menor que 5 utilizando un ciclo for.
+tupla = (13, 1, 8, 3, 2, 5, 8)
+lista = []
+
+for t in tupla:
+    if t < 5:
+        lista.append(t)
+else:
+    print(f'Los numeros menores de 5 son: {lista}')
+
+# Transformar cada numero  de la lista que se formo en el el ejercicio anterior
+# , multiplicandolo por 2
+
+for o in range(len(lista)):
+    lista[o] = lista[o] * 2
+else:
+    print(f'El resultado de los valores de la lista multiplicado por 2 es: {lista}')
+
+#TUPLAS     ----------------------------------------------------------------------------
+
+# Hacer un programa para ingresar cinco números distintos y luego mostrar por
+# pantalla el mayor y el menor de ellos.
+
+# Hacer un programa para ingresar cuatro números y luego mostrar por pantalla
+# cuáles son mayores a 100.
+
+# Hacer un programa para ingresar cuatro números y luego mostrar por pantalla
+# cuántos son menores a 100.
