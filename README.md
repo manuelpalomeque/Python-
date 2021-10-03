@@ -17,8 +17,7 @@ todo el avance que haga lo subire acá.
           Ciclo For
           Funciones
           Listas
-          Tuplas
-             
+                       
 ####  C) Parte 3:
           Clases
           POO
