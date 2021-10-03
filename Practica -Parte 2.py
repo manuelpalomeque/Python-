@@ -1,3 +1,12 @@
+#FUNCIONES -----------------------------------------------------------------------------
+# Filtrar las comidas que no sean carne
+# Encuentra y devuelve la gallina
+# Dime donde esta la gallina
+# Rellenar la lista de dinero
+# esta bien?
+# Hay algun error?
+
+
 #LISTAS     ----------------------------------------------------------------------------
 # Dada la siguiente tupla, crear una lista que sólo incluya
 # los números menor que 5 utilizando un ciclo for.
@@ -17,13 +26,6 @@ for o in range(len(lista)):
     lista[o] = lista[o] * 2
 else:
     print(f'El resultado de los valores de la lista multiplicado por 2 es: {lista}')
-
-# Filtrar las comidas que no sean carne
-# Encuentra y devuelve la gallina
-# Dime donde esta la gallina
-# Rellenar la lista de dinero
-# esta bien?
-# Hay algun error?
 
 #TUPLAS     ----------------------------------------------------------------------------
 
