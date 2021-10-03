@@ -159,7 +159,7 @@ while num_ingresados != 0:
     if ban_ == 0:
         if num_ingresados > 0:
             minPos = num_ingresados
-        elif num_ingresados < 0:
+        else:
             maxNeg = num_ingresados
         ban_ += 1
     elif minPos == 0 or maxNeg == 0:
@@ -179,6 +179,35 @@ else:
 # Hacer un programa para ingresar una lista de números que corta cuando se
 # ingresa un cero y luego mostrar: la cantidad de números primos, la cantidad de
 # números pares, la cantidad de positivos y la cantidad de negativos.
+cantPri_ = 0
+cantPares_ = 0
+cantPositv_ = 0
+cantNega_ = 0
+nIngresado_ = int(input('Ingrese el numero: '))
+
+while nIngresado_ != 0:
+    if nIngresado_ > 0:
+        cantPositv_ += 1
+    else:
+        cantNega_ += 1
+    if nIngresado_ % 2 == 0:
+        cantPares_ += 1
+    contPri_ = 0
+    c = 1
+    while c <= nIngresado_:
+        if nIngresado_ % c == 0:
+            contPri_ +=1
+        c += 1
+    if contPri_ == 2:
+        cantPri_ += 1
+    nIngresado_ = int(input('Ingrese el numero: '))
+
+else:
+    print(f'''La cantidad de: 
+            numeros primos: {cantPri_},
+            numeros pares: {cantPares_},
+            numeros positivos: {cantPositv_},
+            numeros negativos: {cantNega_}''')
 
 #CICLO FOR  -----------------------------------------------------------------------------
 # Hacer un programa para mostrar los números del 1 al 10. No se debe realizar
