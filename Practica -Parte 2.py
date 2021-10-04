@@ -307,9 +307,29 @@ print(f' El maximo de los numeros pares es {maxPar_} y el minimo de los impares 
 # devuelva el producto de ambos. Luego hacer un programa que pida el precio
 # de un artículo y la cantidad vendida y muestre por pantalla el monto total a
 # pagar. Usar la función.
+def producto(nu1, nu2):
+    return  nu1 * nu2
+
+preProduc = float(input('Ingrese el precio del producto: '))
+cantVen = int(input('Ingrese la cantidad de productos: '))
+
+monTot = producto(preProduc, cantVen)
+print(f'El monto total es ${monTot}')
 
 # Hacer una función llamada “mayor” que reciba dos números enteros y
 # devuelva el mayor de ellos o cero si son iguales.
+def mayor(v_n1, v_n2):
+    if v_n1 > v_n2:
+        return v_n1
+    elif v_n1 == v_n2:
+        return 0
+    else:
+        return v_n2
+
+no1 = int(input('Ingrese el primer valor: '))
+no2 = int(input('Ingrese el segundo valor: '))
+res_ = mayor(no1, no2)
+print(res_)
 
 # Hacer una función llamada “par” que reciba un número entero y devuelva 1 si
 # es par o cero si no lo es. Hacer un programa para ingresar 20 números y
