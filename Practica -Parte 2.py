@@ -402,7 +402,6 @@ for m in range(10):
 # c. 0 si el número es cero.
 # Hacer un programa main que permita ingresar 100 números y emitir por
 # pantalla cuántos son positivos, cuántos negativos y cuántos cero.
-
 def posNegCero(n, j):
     if n == 0:
         j = 0
@@ -436,6 +435,28 @@ else:
 # b. La cantidad de números impares.
 # c. El menor de los números primos.
 # Hacer uso de las funciones anteriormente desarrolladas.
+number_n = int(input('Ingrese el numero: '))
+mayNum_pares = 0
+accPrimos_0 = 0
+menNum_impares = 0
+
+while number_n !=0:
+    if par(number_n) == 1:
+        if mayNum_pares == 0:
+            mayNum_pares = number_n
+        elif number_n >mayNum_pares:
+            mayNum_pares = number_n
+    else:
+        if menNum_impares == 0:
+            menNum_impares = number_n
+        elif number_n < menNum_impares:
+            menNum_impares = number_n
+    if primo(number_n) == 1:
+        accPrimos_0 += 1
+    number_n = int(input('Ingrese el numero: '))
+else:
+    print(f'El mayor de los pares es {mayNum_pares}, el menor de los impares es {menNum_impares}'
+          f' y la cantidad de numeros primos es {accPrimos_0}')
 
 # Filtrar las comidas que no sean carne
 # Encuentra y devuelve la gallina
