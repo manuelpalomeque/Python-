@@ -394,21 +394,41 @@ for m in range(10):
     total_cuo = pagos(monto_, cuotas_)
     print(f'El monto total es de {monto_}, se abonara en {cuotas_} cuotas de ${total_cuo} cada una')
 
-# Hacer una función que se llame “sumaResta” que reciba dos números y que
-# devuelva la suma Y la resta del primer número con el segundo.
-# Nota: recordemos que una función solo puede devolver UN valor por return.
-# Cómo podríamos hacer para tener ambos resultados en el main?
-
-# Hacer una función de tipo void (porque no va a devolver nada) llamada
-# “positivoNegativoCero” que reciba un número por valor y una variable por
+# Hacer una función llamada posNegCero” que reciba un número por valor y una variable por
 # referencia. Que analice el número y escriba variable recibida por referencia
 # con:
 # a. 1 si el número es positivo.
 # b. -1 si el número es negativo.
 # c. 0 si el número es cero.
-
 # Hacer un programa main que permita ingresar 100 números y emitir por
 # pantalla cuántos son positivos, cuántos negativos y cuántos cero.
+
+def posNegCero(n, j):
+    if n == 0:
+        j = 0
+    elif n > 0:
+        j = 1
+    else:
+        j = -1
+    return  j
+
+accPos = 0
+accNeg = 0
+accCero = 0
+ban_dera = None
+
+for f in range(5):
+    n = int(input('Ingrese numero: '))
+    ban_dera = posNegCero(n, ban_dera)
+    if ban_dera == 0:
+        accCero += 1
+    elif ban_dera == 1:
+        accPos += 1
+    else:
+        accNeg += 1
+else:
+    print(f'cantidad de positivos {accPos}, cantidad de negativos {accNeg}'
+          f' y la cantidad de ceros {accCero}')
 
 # Hacer un programa que permita ingresar una lista de números que corta
 # cuando se ingresa un cero. A partir de dichos datos informar:
