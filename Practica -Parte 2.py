@@ -355,12 +355,44 @@ else:
 # si el número es primo o cero si no lo es. Hacer un programa para ingresar
 # números. El lote corta cuando se ingresa un número cero. Informar el
 # promedio teniendo en cuenta sólo los números primos.
+def primo(ent):
+    acc = 0
+    for x in range(1, ent + 1):
+        if ent % x == 0:
+            acc += 1
+    if acc == 2:
+        return 1
+    else:
+        return 0
+
+entero_ = int(input('Ingrese el numero: '))
+pNum_ = 0
+con_primos = 0
+
+while entero_ != 0:
+    res_do = primo(entero_)
+    if res_do == 1:
+        pNum_ += entero_
+        con_primos += 1
+    entero_ = int(input('Ingrese el numero: '))
+    res_do = 0
+else:
+    pro_pr = pNum_ // con_primos
+    print(f'El promedio con los numeros primos es {pro_pr}')
 
 # Hacer una función llamada “pagos” que reciba un monto (float) y una cantidad
 # de pagos (entero) y devuelva el monto de cada pago. Hacer un programa para
 # ingresar 10 ventas. Para cada venta se conoce el monto y la cantidad de pagos.
 # El programa deberá mostrar la cantidad de pagos y el monto del pago para
 # cada una de las ventas.
+def pagos(mon, cuo):
+    return mon / cuo
+
+for m in range(10):
+    monto_ = float(input('Ingrese el monto: $ '))
+    cuotas_ = int(input('Ingrese la cantidad de cuotas: '))
+    total_cuo = pagos(monto_, cuotas_)
+    print(f'El monto total es de {monto_}, se abonara en {cuotas_} cuotas de ${total_cuo} cada una')
 
 # Hacer una función que se llame “sumaResta” que reciba dos números y que
 # devuelva la suma Y la resta del primer número con el segundo.
