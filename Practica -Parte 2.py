@@ -525,8 +525,18 @@ print(f'Los numeros menores a 100 son : {menores_100}')
 # Hacer un programa que solicite 50 números enteros y los guarde en un vector.
 # Luego recorrer el vector y determinar e informar cuál es la suma de los valores
 # del mismo.
-# Nota: usar dos ciclos: uno para guardar los números en el vector y otro para
-# recorrerlo y leerlo.
+vector1 =[]
+
+for d in range(50):
+    num_vector1 = int(input('Ingrese el numero: '))
+    vector1.append(num_vector1)
+    d += 1
+
+sumValVec = 0
+for numerosVector in vector1:
+    sumValVec += vector1[numerosVector]
+else:
+    print(f'La suma de los valores da un total de {sumValVec}')
 
 # Hacer un programa que solicite 50 números enteros y los guarde en un vector.
 # Luego recorrer todos los elementos del vector y determinar cuál es el valor
