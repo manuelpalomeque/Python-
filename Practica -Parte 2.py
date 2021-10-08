@@ -543,7 +543,7 @@ else:
 # máximo y su posición dentro del vector.
 vector2 = []
 
-for x1 in range(5):
+for x1 in range(50):
     num_vector2 = int(input('Ingrese el numero: '))
     vector2.append(num_vector2)
     x1 += 1
@@ -563,6 +563,23 @@ else:
 # Hacer un programa que solicite 100 números enteros y los guarde en un
 # vector. Luego recorrer ese vector para calcular el promedio. Mostrar por
 # pantalla los valores del vector que son mayores al promedio calculado.
+vector3 = []
+
+for ab in range(5):
+    numVector3 = int(input('Ingrese el valor: '))
+    vector3.append(numVector3)
+
+sumVector3 = 0
+for v3 in vector3:
+    sumVector3 += v3
+promVector3 = sumVector3 / len(vector3)
+
+vector3MayPro = []
+for v3_ in vector3:
+    if v3_ > promVector3:
+        vector3MayPro.append(v3_)
+
+print(f'El promedio es: {promVector3} y los valores mayores al promedio son: {vector3MayPro}')
 
 # Dada una lista de 10 números enteros, cargarlos en un vector. Luego,
 # determinar e informar si el vector está ordenado en forma creciente. Por
