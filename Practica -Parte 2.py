@@ -541,6 +541,24 @@ else:
 # Hacer un programa que solicite 50 números enteros y los guarde en un vector.
 # Luego recorrer todos los elementos del vector y determinar cuál es el valor
 # máximo y su posición dentro del vector.
+vector2 = []
+
+for x1 in range(5):
+    num_vector2 = int(input('Ingrese el numero: '))
+    vector2.append(num_vector2)
+    x1 += 1
+
+contIndiceVector2 = 1
+valMaxVector2 = vector2[0]
+posValMaxV2 = 0
+
+for v2 in vector2:
+    if v2 > valMaxVector2:
+        valMaxVector2 = v2
+        posValMaxV2 = contIndiceVector2
+    contIndiceVector2 += 1
+else:
+    print(f'El numero mayor es {valMaxVector2} y se ingreso en la posicion {posValMaxV2}')
 
 # Hacer un programa que solicite 100 números enteros y los guarde en un
 # vector. Luego recorrer ese vector para calcular el promedio. Mostrar por
