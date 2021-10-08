@@ -624,7 +624,24 @@ else:
 # Dada una lista de 10 números, cargarlos en un vector. Luego detectar si en el
 # vector hay algún elemento repetido. De haberlo, indicarlo con un cartel
 # aclaratorio “Hay repetidos”, de lo contrario indicar “No hay repetidos”.
-# Pista: usar ciclos combinados.
+vector6 = []
+
+for cd in range(10):
+    numVector6 = int(input('Ingrese el numero: '))
+    vector6.append(numVector6)
+
+banderaV6 = True
+numV6 = vector6[0]
+
+for v6 in vector6:
+    if numV6 != v6:
+        banderaV6 = False
+        break
+
+if banderaV6 == True:
+    print('No hay repetidos')
+else:
+    print('Hay numeros repetidos')
 
 # Una empresa comercializa 15 tipos de artículos y por cada venta realizada
 # genera un registro con los siguientes datos:
