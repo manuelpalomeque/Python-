@@ -565,7 +565,7 @@ else:
 # pantalla los valores del vector que son mayores al promedio calculado.
 vector3 = []
 
-for ab in range(5):
+for ab in range(100):
     numVector3 = int(input('Ingrese el valor: '))
     vector3.append(numVector3)
 
@@ -585,6 +585,26 @@ print(f'El promedio es: {promVector3} y los valores mayores al promedio son: {ve
 # determinar e informar si el vector está ordenado en forma creciente. Por
 # ejemplo el vector con los valores 1, 3, 5, 7 y 9 está ordenado; el vector 1, 5, 3, 7
 # y 9 no lo está.
+vector4 = []
+
+for bc in range(10):
+    numVector4 = int(input('Ingrese el valor: '))
+    vector4.append(numVector4)
+
+banVector4 = 1
+maxVector4 = vector4[0]
+
+for v4 in vector4:
+    if v4 >= maxVector4:
+        maxVector4 = v4
+    else:
+        banVector4 = 0
+        break
+
+if banVector4 == 1:
+    print(f'Los valores estan ordenados: {vector4}')
+else:
+    print(f'Los valores estan desordenados: {vector4}')
 
 # Hacer un programa que solicite una serie de valores de tipo char (caracteres).
 # Se entiende por carácter a cada elemento que se obtiene de presionar una
