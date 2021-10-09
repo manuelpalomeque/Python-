@@ -1,7 +1,7 @@
 # Python (En progreso)
 
-En este repositorio se encuentran ejercicios y practicas del lenguaje en situaciones de la vida cotidiana.
-El objetivo fue , mejorar mi manejo del lenguaje  y la practica del mismo. Si bien todavia estoy construyendo el repositorio,
+En este repositorio se encuentran ejercicios y practicas del lenguaje PYTHON.
+El objetivo fue, mejorar mi manejo y la practica del mismo. Si bien todavia estoy construyendo el repositorio,
 todo el avance que haga lo subire acá.
 
 ### El contenido se organizó en tres partes :
@@ -12,12 +12,18 @@ todo el avance que haga lo subire acá.
           Operadores Logicos
         
 ####  B) Parte 2:
-          
           Ciclo While
           Ciclo For
           Funciones
           Listas
                        
 ####  C) Parte 3:
+          Lotes
+          Cadenas
+          Matrices
+          Struct
+
+####  D) Parte 4:
           Clases
           POO
+
