@@ -620,6 +620,22 @@ else:
 # Vector char modificado: “Hole muchechede cómo esten”
 # Finalmente, mostrar el resultado en pantalla.
 # Nota: necesitaremos un vector char de 50, pero no lo cargaremos con un For.
+vector5 =[]
+cVector5 = input('Ingrese el caracter:')
+pV = '.'
+
+while cVector5 != pV and len(vector5) < 5:
+    vector5.append(cVector5)
+    cVector5 = input('Ingrese el caracter:')
+
+letV5A = 'a'
+contIndiV5 = 0
+
+for v5 in vector5:
+    if v5 == letV5A:
+        vector5[contIndiV5] = 'e'
+    contIndiV5 += 1
+print(vector5)
 
 # Dada una lista de 10 números, cargarlos en un vector. Luego detectar si en el
 # vector hay algún elemento repetido. De haberlo, indicarlo con un cartel
