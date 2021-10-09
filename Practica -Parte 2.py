@@ -705,6 +705,12 @@ print(f'Cantidad de productos vendidos para el articulo 10 = {vector7[9]} produc
 
 # Se ingresa una lista de 20 números en un vector. Se pide ordenar dichos
 # números en forma decreciente (de mayor a menor). Mostrar el listado
-# ordenado informando también la posición original de cada número en el
-# vector.
-# Pista: usar ciclos combinados.
+# ordenado.
+vector8 = []
+
+for jk in range(20):
+    numVector8 = int(input('Ingrese el numero: '))
+    vector8.append(numVector8)
+
+vector8.sort()
+print(vector8)
