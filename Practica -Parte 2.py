@@ -624,7 +624,7 @@ vector5 =[]
 cVector5 = input('Ingrese el caracter:')
 pV = '.'
 
-while cVector5 != pV and len(vector5) < 5:
+while cVector5 != pV and len(vector5) < 50:
     vector5.append(cVector5)
     cVector5 = input('Ingrese el caracter:')
 
@@ -675,6 +675,33 @@ else:
 # Nota: tener en cuenta el concepto de “registro” y el planteo de estructura
 # principal separado de consignas (ver videos de ciclos combinados y ejercicios
 # resueltos de ciclos combinados).
+vector7 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+numArticulo = int(input('Ingrese el numero de articulo(del 1 al 15): '))
+cantVendida_ = int(input('Ingrese la cantidad vendida: '))
+
+while numArticulo != 0:
+    vector7[numArticulo-1] = vector7[numArticulo-1] + cantVendida_
+    numArticulo = int(input('Ingrese el numero de articulo: '))
+    cantVendida_ = int(input('Ingrese la cantidad vendida: '))
+
+maxVector7 = vector7[0]
+artVector7 = 1
+
+for fg in range(15):
+    if vector7[fg] >= maxVector7:
+        maxVector7 = vector7[fg]
+        artVector7 = fg + 1
+
+indiceNoVendidos = []
+
+for hi in range(15):
+    if vector7[hi] == 0:
+        indiceNoVendidos.append(hi+1)
+
+print(f'Los articulos que no registraron ventas fueron: {indiceNoVendidos}')
+print(f'El articulo que mas se vendio fue el {artVector7} con {vector7[artVector7-1]} unidades vendidas')
+print(f'Cantidad de productos vendidos para el articulo 10 = {vector7[9]} productos')
 
 # Se ingresa una lista de 20 números en un vector. Se pide ordenar dichos
 # números en forma decreciente (de mayor a menor). Mostrar el listado
