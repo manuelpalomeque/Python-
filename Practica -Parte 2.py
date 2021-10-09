@@ -630,15 +630,18 @@ for cd in range(10):
     numVector6 = int(input('Ingrese el numero: '))
     vector6.append(numVector6)
 
-banderaV6 = True
-numV6 = vector6[0]
+banderaV6 = 0
 
 for v6 in vector6:
-    if numV6 != v6:
-        banderaV6 = False
-        break
+    repeV6 = v6
+    contRepeV6 = 0
+    for repeV6 in vector6:
+        if repeV6 == v6:
+            contRepeV6 += 1
+    if contRepeV6 >= 2:
+        banderaV6 = 1
 
-if banderaV6 == True:
+if banderaV6 == 0:
     print('No hay repetidos')
 else:
     print('Hay numeros repetidos')
