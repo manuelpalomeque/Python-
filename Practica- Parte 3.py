@@ -19,7 +19,28 @@
 #   Este listado debe salir ordenado de mayor a menor por cantidad total vendida.
 #   b) Informar, si los hubiera, los nombres de los meses en que no hubo ventas.
 #   c) Informar los códigos de los artículos cuyas ventas en cantidad son mayores al promedio.
+codigo1 = []
+precio1 =[]
 
+for x in range(20):
+    numcodigo1 = int(input('Ingrese el numero de codigo (4 digitos): '))
+    numPrecio1 = float(input('Ingrese el precio del producto: $ '))
+    codigo1.append(numcodigo1)
+    precio1.append(numPrecio1)
+
+numCliente = []
+codArticulo =[]
+mes =[]
+dia = []
+cantVendida = []
+
+soliNumCliente = int(input('Ingrese el numero de cliente: '))
+soliCodArticulo = int(input('Ingrese el codigo del articulo  (4 digitos): '))
+solMes = int(input('Ingrese el mes (del 1 al 12): '))
+solDia = int(input('Ingrese el dia (del 1 al  31): '))
+solCantVend = int(input('Ingrese la cantidad: '))
+
+while numCliente != 0:
 
 # Se dispone de un lote de 300 registros (uno por artículo), cada uno de los cuales tiene la
 # siguiente información:
