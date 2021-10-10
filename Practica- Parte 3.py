@@ -28,11 +28,7 @@ for x in range(20):
     codigo1.append(numcodigo1)
     precio1.append(numPrecio1)
 
-numCliente = []
-codArticulo =[]
-mes =[]
-dia = []
-cantVendida = []
+accCantTotalVend = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 soliNumCliente = int(input('Ingrese el numero de cliente: '))
 soliCodArticulo = int(input('Ingrese el codigo del articulo  (4 digitos): '))
@@ -41,6 +37,15 @@ solDia = int(input('Ingrese el dia (del 1 al  31): '))
 solCantVend = int(input('Ingrese la cantidad: '))
 
 while numCliente != 0:
+   for k in range(20):
+        if soliCodArticulo == codigo1[k]:
+            accCantTotalVend[k] += solCantVend
+
+   soliNumCliente = int(input('Ingrese el numero de cliente: '))
+   soliCodArticulo = int(input('Ingrese el codigo del articulo  (4 digitos): '))
+   solMes = int(input('Ingrese el mes (del 1 al 12): '))
+   solDia = int(input('Ingrese el dia (del 1 al  31): '))
+   solCantVend = int(input('Ingrese la cantidad: '))
 
 # Se dispone de un lote de 300 registros (uno por artículo), cada uno de los cuales tiene la
 # siguiente información:
