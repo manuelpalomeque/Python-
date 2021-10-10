@@ -28,7 +28,23 @@ for x in range(20):
     codigo1.append(numcodigo1)
     precio1.append(numPrecio1)
 
-accCantTotalVend = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+accCantTotalVend = []
+
+for d in range(20):
+    accCantTotalVend.append(0)
+
+mes = []
+
+abc = 0
+for a in range(12):
+    m_ = abc +1
+    mes.append(m_)
+    abc += 1
+
+accVentMes = []
+
+for r in range(12):
+    accVentMes.append(0)
 
 soliNumCliente = int(input('Ingrese el numero de cliente: '))
 soliCodArticulo = int(input('Ingrese el codigo del articulo  (4 digitos): '))
@@ -40,6 +56,8 @@ while soliNumCliente != 0:
    for k in range(20):
         if soliCodArticulo == codigo1[k]:
             accCantTotalVend[k] += solCantVend
+        if solMes == mes[k]:
+            accVentMes[k] += solCantVend
 
    soliNumCliente = int(input('Ingrese el numero de cliente: '))
    soliCodArticulo = int(input('Ingrese el codigo del articulo  (4 digitos): '))
@@ -66,6 +84,20 @@ for g in range(5):
 Código de Artículo: {codigo[z]}
 Cantidad Total Vendida: {acc[z]}''')
     z += 1
+
+mesSinVentas = []
+auxMes = 0
+
+for v in range(12):
+    if accVentMes[v] == 0:
+        mSinVent = mesNombre[v]
+        mesSinVentas.append(mSinVent)
+        auxMes = 1
+
+if auxMes == 1:
+    print(f'Los meses sin ventas fueron: {mesSinVentas}')
+else:
+    print(f'Hubo ventas todos los meses')
 
 # Se dispone de un lote de 300 registros (uno por artículo), cada uno de los cuales tiene la
 # siguiente información:
