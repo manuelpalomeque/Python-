@@ -36,7 +36,7 @@ solMes = int(input('Ingrese el mes (del 1 al 12): '))
 solDia = int(input('Ingrese el dia (del 1 al  31): '))
 solCantVend = int(input('Ingrese la cantidad: '))
 
-while numCliente != 0:
+while soliNumCliente != 0:
    for k in range(20):
         if soliCodArticulo == codigo1[k]:
             accCantTotalVend[k] += solCantVend
@@ -46,6 +46,15 @@ while numCliente != 0:
    solMes = int(input('Ingrese el mes (del 1 al 12): '))
    solDia = int(input('Ingrese el dia (del 1 al  31): '))
    solCantVend = int(input('Ingrese la cantidad: '))
+
+i = 0
+while i < len(accCantTotalVend):
+    j = i +1
+    while j < len(accCantTotalVend):
+        if accCantTotalVend[i] < accCantTotalVend[j]:
+            aux = accCantTotalVend[i]
+            accCantTotalVend[i] = accCantTotalVend[j]
+            accCantTotalVend[j] = aux
 
 # Se dispone de un lote de 300 registros (uno por artículo), cada uno de los cuales tiene la
 # siguiente información:
