@@ -47,6 +47,7 @@ while soliNumCliente != 0:
    solDia = int(input('Ingrese el dia (del 1 al  31): '))
    solCantVend = int(input('Ingrese la cantidad: '))
 
+#Metodo de la burbuja:
 i = 0
 while i < len(accCantTotalVend):
     j = i +1
@@ -55,6 +56,16 @@ while i < len(accCantTotalVend):
             aux = accCantTotalVend[i]
             accCantTotalVend[i] = accCantTotalVend[j]
             accCantTotalVend[j] = aux
+            aux = codigo1[i]
+            codigo1[i] = codigo1[j]
+            codigo1[j] = aux
+
+z = 0
+for g in range(5):
+    print(f'''
+Código de Artículo: {codigo[z]}
+Cantidad Total Vendida: {acc[z]}''')
+    z += 1
 
 # Se dispone de un lote de 300 registros (uno por artículo), cada uno de los cuales tiene la
 # siguiente información:
