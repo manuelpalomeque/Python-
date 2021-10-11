@@ -151,7 +151,22 @@ numCliente2 = int(input('Ingrese el numero de Cliente: '))
 numeroArticulo = int(input('Ingrese el numero de articulo (4 digitos): '))
 cantUnidVendidas2 = int(input('Ingrese la cantidad de unidades vendidas: '))
 
-#while numCliente2 != 0:
+indi_2 = 0
+while numCliente2 != 0:
+    indi_2 = 0
+    for nr in numArt2:
+        if numeroArticulo == nr:
+            importeAAbonar2 = precioUnit[indi_2] * cantUnidVendidas2
+            print(f'''Listado de ventas:
+            Nro. Cliente:       {numCliente2}
+            Nro.Artículo:       {numeroArticulo}
+            Cantidad Vendida:   {cantUnidVendidas2}
+            Importe Total:      ${importeAAbonar2}
+            ''')
+        indi_2 += 1
+    numCliente2 = int(input('Ingrese el numero de Cliente: '))
+    numeroArticulo = int(input('Ingrese el numero de articulo (4 digitos): '))
+    cantUnidVendidas2 = int(input('Ingrese la cantidad de unidades vendidas: '))
 
 #  Una empresa de transporte de carga por camión posee 20 tarifas distintas de acuerdo al destino
 # de los envíos que deba realizar. Dispone de un lote de registros con la siguiente información:
