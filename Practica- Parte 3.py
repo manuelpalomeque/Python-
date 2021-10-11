@@ -1,4 +1,4 @@
-#LOTES DE CARGA Y PROCESOS   --------------------------------------------------------------
+# LOTES DE CARGA Y PROCESOS   --------------------------------------------------------------
 # Una empresa que fabrica 20 artículos tiene la siguiente información para cada uno de ellos:
 #       - Código de Artículo (4 dígitos, no correlativos).
 #       - Precio Unitario.
@@ -20,7 +20,7 @@
 #   b) Informar, si los hubiera, los nombres de los meses en que no hubo ventas.
 #   c) Informar los códigos de los artículos cuyas ventas en cantidad son mayores al promedio.
 codigo1 = []
-precio1 =[]
+precio1 = []
 
 for x in range(20):
     numcodigo1 = int(input('Ingrese el numero de codigo (4 digitos): '))
@@ -65,10 +65,10 @@ while soliNumCliente != 0:
    solDia = int(input('Ingrese el dia (del 1 al  31): '))
    solCantVend = int(input('Ingrese la cantidad: '))
 
-#Metodo de la burbuja:
+# Metodo de la burbuja:
 i = 0
 while i < len(accCantTotalVend):
-    j = i +1
+    j = i + 1
     while j < len(accCantTotalVend):
         if accCantTotalVend[i] < accCantTotalVend[j]:
             aux = accCantTotalVend[i]
@@ -86,8 +86,7 @@ Cantidad Total Vendida: {accCantTotalVend[z]}''')
     z += 1
 
 mesSinVentas = []
-mesNombre =['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto',
-            'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
+mesNombre = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
 auxMes = 0
 
 for v in range(12):
@@ -128,7 +127,7 @@ for art in accCantTotalVend:
 # El último registro de este lote tiene número de cliente cero y no debe procesarse. Desarrollar el
 # programa que determine e imprima:
 #   a) Un listado de las ventas realizadas, con el siguiente formato:
-##   Listado de ventas
+#   Listado de ventas
 #       Nro. Cliente        99
 #       Nro.Artículo        99
 #       Cantidad Vendida    999
@@ -151,6 +150,10 @@ numCliente2 = int(input('Ingrese el numero de Cliente: '))
 numeroArticulo = int(input('Ingrese el numero de articulo (4 digitos): '))
 cantUnidVendidas2 = int(input('Ingrese la cantidad de unidades vendidas: '))
 
+nCli2 = []
+cantVen2 = []
+impClien2 = []
+
 indi_2 = 0
 while numCliente2 != 0:
     indi_2 = 0
@@ -163,10 +166,23 @@ while numCliente2 != 0:
             Cantidad Vendida:   {cantUnidVendidas2}
             Importe Total:      ${importeAAbonar2}
             ''')
+            nCli2.append(numCliente2)
+            cantVen2.append(cantUnidVendidas2)
+            impClien2.append(importeAAbonar2)
         indi_2 += 1
     numCliente2 = int(input('Ingrese el numero de Cliente: '))
     numeroArticulo = int(input('Ingrese el numero de articulo (4 digitos): '))
     cantUnidVendidas2 = int(input('Ingrese la cantidad de unidades vendidas: '))
+
+maxPago = impClien2[0]
+clienteMasPago = nCli2[0]
+
+for d in range(len(impClien2)):
+    if maxPago < impClien2[d]:
+        maxPago = impClien2[d]
+        clienteMasPago = nCli2[d]
+
+print(f' El cliete que mas pago es el numero: {clienteMasPago}, con un monto de ${maxPago} ')
 
 #  Una empresa de transporte de carga por camión posee 20 tarifas distintas de acuerdo al destino
 # de los envíos que deba realizar. Dispone de un lote de registros con la siguiente información:
@@ -248,4 +264,4 @@ while numCliente2 != 0:
 #   importe en pesos por kilómetro por la cantidad de kilómetrosrecorridos.
 
 
-#xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
+# xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
