@@ -99,13 +99,18 @@ if auxMes == 1:
 else:
     print(f'Hubo ventas todos los meses')
 
-#puntoC:
 sumValoresArticulo = 0
 for j in accCantTotalVend:
     sumValoresArticulo += j
 
 promVenArticulos = sumValoresArticulo / len(accCantTotalVend)
 print(promVenArticulos)
+
+ind_ = 0
+for art in accCantTotalVend:
+    if art > promVenArticulos:
+        print(f'El articulo {codigo1[ind_]}, supera el promedio de ventas ({promVenArticulos}), con {art} ventas.')
+    ind_ += 1
 
 # Se dispone de un lote de 300 registros (uno por artículo), cada uno de los cuales tiene la
 # siguiente información:
