@@ -37,7 +37,7 @@ mes = []
 
 abc = 0
 for a in range(12):
-    m_ = abc +1
+    m_ = abc + 1
     mes.append(m_)
     abc += 1
 
@@ -98,6 +98,14 @@ if auxMes == 1:
     print(f'Los meses sin ventas fueron: {mesSinVentas}')
 else:
     print(f'Hubo ventas todos los meses')
+
+#puntoC:
+sumValoresArticulo = 0
+for j in accCantTotalVend:
+    sumValoresArticulo += j
+
+promVenArticulos = sumValoresArticulo / len(accCantTotalVend)
+print(promVenArticulos)
 
 # Se dispone de un lote de 300 registros (uno por artículo), cada uno de los cuales tiene la
 # siguiente información:
