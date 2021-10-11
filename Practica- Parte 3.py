@@ -86,7 +86,9 @@ Cantidad Total Vendida: {accCantTotalVend[z]}''')
     z += 1
 
 mesSinVentas = []
-mesNombre = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
+mesNombre = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto',
+             'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
+
 auxMes = 0
 
 for v in range(12):
@@ -151,8 +153,11 @@ numeroArticulo = int(input('Ingrese el numero de articulo (4 digitos): '))
 cantUnidVendidas2 = int(input('Ingrese la cantidad de unidades vendidas: '))
 
 nCli2 = []
-cantVen2 = []
+accCantVen2 = []
 impClien2 = []
+
+for lu in range(300):
+    accCantVen2.append(0)
 
 indi_2 = 0
 while numCliente2 != 0:
@@ -167,7 +172,7 @@ while numCliente2 != 0:
             Importe Total:      ${importeAAbonar2}
             ''')
             nCli2.append(numCliente2)
-            cantVen2.append(cantUnidVendidas2)
+            accCantVen2[indi_2] += cantUnidVendidas2
             impClien2.append(importeAAbonar2)
         indi_2 += 1
     numCliente2 = int(input('Ingrese el numero de Cliente: '))
@@ -182,7 +187,11 @@ for d in range(len(impClien2)):
         maxPago = impClien2[d]
         clienteMasPago = nCli2[d]
 
-print(f' El cliete que mas pago es el numero: {clienteMasPago}, con un monto de ${maxPago} ')
+print(f'El cliete que mas pago es el numero: {clienteMasPago}, con un monto de ${maxPago} ')
+
+for w in range(len(accCantVen2)):
+    if accCantVen2[w] == 0:
+        print(f' El articulo numero {numArt2[w]}, no registro ventas')
 
 #  Una empresa de transporte de carga por camión posee 20 tarifas distintas de acuerdo al destino
 # de los envíos que deba realizar. Dispone de un lote de registros con la siguiente información:
