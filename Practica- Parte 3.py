@@ -81,11 +81,13 @@ while i < len(accCantTotalVend):
 z = 0
 for g in range(5):
     print(f'''
-Código de Artículo: {codigo[z]}
-Cantidad Total Vendida: {acc[z]}''')
+Código de Artículo: {codigo1[z]}
+Cantidad Total Vendida: {accCantTotalVend[z]}''')
     z += 1
 
 mesSinVentas = []
+mesNombre =['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto',
+            'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
 auxMes = 0
 
 for v in range(12):
@@ -144,6 +146,12 @@ for q in range(300):
     numArt2.append(nA2)
     cantUnidStock.append(cUS2)
     precioUnit.append(pU2)
+
+numCliente2 = int(input('Ingrese el numero de Cliente: '))
+numeroArticulo = int(input('Ingrese el numero de articulo (4 digitos): '))
+cantUnidVendidas2 = int(input('Ingrese la cantidad de unidades vendidas: '))
+
+#while numCliente2 != 0:
 
 #  Una empresa de transporte de carga por camión posee 20 tarifas distintas de acuerdo al destino
 # de los envíos que deba realizar. Dispone de un lote de registros con la siguiente información:
