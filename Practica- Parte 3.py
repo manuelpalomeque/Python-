@@ -126,14 +126,24 @@ for art in accCantTotalVend:
 # El último registro de este lote tiene número de cliente cero y no debe procesarse. Desarrollar el
 # programa que determine e imprima:
 #   a) Un listado de las ventas realizadas, con el siguiente formato:
-#
-#   Listado de ventas
+##   Listado de ventas
 #       Nro. Cliente        99
 #       Nro.Artículo        99
 #       Cantidad Vendida    999
 #       Importe Total       999.99
 #   b) Informar cuál es el número de cliente que más compró en total (en pesos).
 #   c) Informar cada uno de los números de los artículos que no hayan registrado ventas.
+numArt2 = []
+cantUnidStock = []
+precioUnit = []
+
+for q in range(300):
+    nA2 = int(input('Ingrese el numero de articulo (4 digitos): '))
+    cUS2 = int(input('Ingrese la cantidad de unidades en stock del articulo: '))
+    pU2 = float(input('Ingrese el precio del articulo: $ '))
+    numArt2.append(nA2)
+    cantUnidStock.append(cUS2)
+    precioUnit.append(pU2)
 
 #  Una empresa de transporte de carga por camión posee 20 tarifas distintas de acuerdo al destino
 # de los envíos que deba realizar. Dispone de un lote de registros con la siguiente información:
