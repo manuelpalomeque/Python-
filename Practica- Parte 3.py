@@ -212,7 +212,46 @@ for w in range(len(accCantVen2)):
 #   Este listado debe salir ordenado por total recaudado, de mayor a menor.
 #   c) Indicar el número de camión que recorrió la menor cantidad de kilómetros entre los que
 #   realizaron viajes. Nota: cada camión realizó cero, uno o varios viajes.
+vecNumTarifa3 = []
+vecImpXKm = []
 
+def cargarLote1(v1, v2, tam):
+    for h in range(tam):
+        a_ = int(input('Ingrese el numero de tarifa: '))
+        b_ = float(input('Ingrese el importe por KM: $ '))
+        v1.append(a_)
+        v2.append(b_)
+
+cargarLote1(vecNumTarifa3, vecImpXKm, 3)
+
+def inicializarEn0(vector, tam):
+    for b in range(tam):
+        vector.append(0)
+
+vectorNumCamion = []
+vectorKilometrosRecorridosSegunTarifa =[]
+
+inicializarEn0(vectorKilometrosRecorridosSegunTarifa, 20)
+
+numCamion = int(input('Ingrese el numero de camion(del 1 al 100): '))
+numTarifaIngresado = int(input('Ingrese el numero de tarifa: '))
+kilometrosRecorridos = float(input('Ingrese los kilometros recorridos: '))
+
+while numCamion > 0:
+    vectorNumCamion.append(numCamion)
+    for e in range(len(vecNumTarifa3)):
+        if numTarifaIngresado == vecNumTarifa3[e]:
+            vectorKilometrosRecorridosSegunTarifa[e] = kilometrosRecorridos
+    numCamion = int(input('Ingrese el numero de camion(del 1 al 100): '))
+    numTarifaIngresado = int(input('Ingrese el numero de tarifa: '))
+    kilometrosRecorridos = float(input('Ingrese los kilometros recorridos: '))
+
+def totalrecaudado():
+    for t in range(len(vecNumTarifa3)):
+        totalRecaud = vecImpXKm[t] * vectorKilometrosRecorridosSegunTarifa[t]
+        print(f'Para la tarifa {vecNumTarifa3[t]} se recaudo un total de ${totalRecaud}')
+
+totalrecaudado()
 
 #  Una empresa que realiza transporte de productos frágiles cuenta con una flota de 30 camiones.
 # Se generó un lote de registros con los siguientes datos para cada camión:
@@ -271,6 +310,5 @@ for w in range(len(accCantVen2)):
 #   e) Los números de las agencias, si las hubiera, que hayan efectuado en el mes menos de diez
 #   alquileres en total. Para calcular el importe del alquiler de un auto se debe multiplicar el
 #   importe en pesos por kilómetro por la cantidad de kilómetrosrecorridos.
-
 
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
