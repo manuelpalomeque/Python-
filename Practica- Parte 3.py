@@ -264,12 +264,14 @@ def listado(v9, v8):
         while d < len(vecNumTarifa3):
             if vectorTarifaCamion[c] == vecNumTarifa3[d]:
                 auxPrecio = vecImpXKm[d]
-                for e in range(len(v9)):
+                e = 0
+                while e < len(v9):
                     totalRecaudadoCamion = v8[e] * auxPrecio
                     print(f'''
                     Numero de camion:   {v9[e]}
                     Total recaudado:    ${totalRecaudadoCamion}
                     ''')
+                    e += 1
             d += 1
         c += 1
 
