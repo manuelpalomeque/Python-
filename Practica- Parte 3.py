@@ -230,6 +230,8 @@ def inicializarEn0(vector, tam):
 
 vectorNumCamion = []
 vectorKilometrosRecorridosSegunTarifa =[]
+vectorKmPorCamion = []
+vectorTarifaCamion =[]
 
 inicializarEn0(vectorKilometrosRecorridosSegunTarifa, 20)
 
@@ -239,6 +241,8 @@ kilometrosRecorridos = float(input('Ingrese los kilometros recorridos: '))
 
 while numCamion > 0:
     vectorNumCamion.append(numCamion)
+    vectorKmPorCamion.append(kilometrosRecorridos)
+    vectorTarifaCamion.append((numTarifaIngresado))
     for e in range(len(vecNumTarifa3)):
         if numTarifaIngresado == vecNumTarifa3[e]:
             vectorKilometrosRecorridosSegunTarifa[e] = kilometrosRecorridos
