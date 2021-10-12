@@ -209,9 +209,7 @@ for w in range(len(accCantVen2)):
 #   b) Un listado como el siguiente:
 #       Número de camión    xxx
 #       Total recaudado     xxx
-#   Este listado debe salir ordenado por total recaudado, de mayor a menor.
-#   c) Indicar el número de camión que recorrió la menor cantidad de kilómetros entre los que
-#   realizaron viajes. Nota: cada camión realizó cero, uno o varios viajes.
+
 vecNumTarifa3 = []
 vecImpXKm = []
 
