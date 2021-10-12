@@ -257,6 +257,24 @@ def totalrecaudado():
 
 totalrecaudado()
 
+def listado(v9, v8):
+    c = 0
+    while c < len(vectorTarifaCamion):
+        d = c
+        while d < len(vecNumTarifa3):
+            if vectorTarifaCamion[c] == vecNumTarifa3[d]:
+                auxPrecio = vecImpXKm[d]
+                for e in range(len(v9)):
+                    totalRecaudadoCamion = v8[e] * auxPrecio
+                    print(f'''
+                    Numero de camion:   {v9[e]}
+                    Total recaudado:    ${totalRecaudadoCamion}
+                    ''')
+            d += 1
+        c += 1
+
+listado(vectorNumCamion, vectorKmPorCamion)
+
 #  Una empresa que realiza transporte de productos frágiles cuenta con una flota de 30 camiones.
 # Se generó un lote de registros con los siguientes datos para cada camión:
 #       - Número de camión (1 a 30).
