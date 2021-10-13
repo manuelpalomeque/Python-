@@ -77,6 +77,7 @@ while i < len(accCantTotalVend):
             aux = codigo1[i]
             codigo1[i] = codigo1[j]
             codigo1[j] = aux
+    i += 1
 
 z = 0
 for g in range(5):
@@ -303,7 +304,14 @@ listado(vectorNumCamion, vectorKmPorCamion)
 vectorNumCamion4 = []
 vectorCodigoChofer4 = []
 
-cargarLote1(vectorNumCamion4, vectorCodigoChofer4, 30)
+def cargarLote4(v1, v2, tam):
+    for h in range(tam):
+        a_ = int(input('Ingrese el numero de Camion (el 1 al  30): '))
+        b_ = float(input('Ingrese el codigo de chofer(3 digitos): '))
+        v1.append(a_)
+        v2.append(b_)
+
+cargarLote4(vectorNumCamion4, vectorCodigoChofer4, 3)
 
 
 #  Una empresa de alquiler de autos cuenta con distintas agencias desde donde efectúa sus
