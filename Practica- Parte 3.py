@@ -314,16 +314,20 @@ def cargarLote4(v1, v2, tam):
 
 cargarLote4(vectorNumCamion4, vectorCodigoChofer4, 30)
 
-h = 0
-while h in range(len(vectorNumCamion4)):
-    k = h +1
-    while k < len(vectorNumCamion4):
-        if vectorNumCamion4[k] < vectorNumCamion4[h]:
-            aux_numCa = vectorNumCamion4[h]
-            vectorNumCamion4[h] = vectorNumCamion4[k]
-            vectorNumCamion4[k] = aux_numCa
-        k += 1
-    h += 1
+def ordenAscendente(vecAOrdenar):
+    h = 0
+    while h in range(len(vecAOrdenar)):
+        k = h +1
+        while k < len(vecAOrdenar):
+            if vecAOrdenar[k] < vecAOrdenar[h]:
+                aux_numCa = vecAOrdenar[h]
+                vecAOrdenar[h] = vecAOrdenar[k]
+                vecAOrdenar[k] = aux_numCa
+            k += 1
+        h += 1
+
+ordenAscendente(vectorNumCamion4)
+ordenAscendente(vectorCodigoChofer4)
 
 #  Una empresa de alquiler de autos cuenta con distintas agencias desde donde efectúa sus
 # operaciones. Para ello cuenta con varios lotes de registros. Un primer lote contiene los datos de los
