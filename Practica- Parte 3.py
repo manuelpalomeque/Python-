@@ -209,7 +209,6 @@ for w in range(len(accCantVen2)):
 #   b) Un listado como el siguiente:
 #       Número de camión    xxx
 #       Total recaudado     xxx
-
 vecNumTarifa3 = []
 vecImpXKm = []
 
@@ -220,7 +219,7 @@ def cargarLote1(v1, v2, tam):
         v1.append(a_)
         v2.append(b_)
 
-cargarLote1(vecNumTarifa3, vecImpXKm, 3)
+cargarLote1(vecNumTarifa3, vecImpXKm, 20)
 
 def inicializarEn0(vector, tam):
     for b in range(tam):
@@ -301,6 +300,10 @@ listado(vectorNumCamion, vectorKmPorCamion)
 #   Código de chofer    999
 #   Promedio Q1         999
 #   Promedio Q2         999
+vectorNumCamion4 = []
+vectorCodigoChofer4 = []
+
+cargarLote1(vectorNumCamion4, vectorCodigoChofer4, 30)
 
 
 #  Una empresa de alquiler de autos cuenta con distintas agencias desde donde efectúa sus
