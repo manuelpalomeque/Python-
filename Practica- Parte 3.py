@@ -77,6 +77,7 @@ while i < len(accCantTotalVend):
             aux = codigo1[i]
             codigo1[i] = codigo1[j]
             codigo1[j] = aux
+        j += 1
     i += 1
 
 z = 0
@@ -311,8 +312,18 @@ def cargarLote4(v1, v2, tam):
         v1.append(a_)
         v2.append(b_)
 
-cargarLote4(vectorNumCamion4, vectorCodigoChofer4, 3)
+cargarLote4(vectorNumCamion4, vectorCodigoChofer4, 30)
 
+h = 0
+while h in range(len(vectorNumCamion4)):
+    k = h +1
+    while k < len(vectorNumCamion4):
+        if vectorNumCamion4[k] < vectorNumCamion4[h]:
+            aux_numCa = vectorNumCamion4[h]
+            vectorNumCamion4[h] = vectorNumCamion4[k]
+            vectorNumCamion4[k] = aux_numCa
+        k += 1
+    h += 1
 
 #  Una empresa de alquiler de autos cuenta con distintas agencias desde donde efectúa sus
 # operaciones. Para ello cuenta con varios lotes de registros. Un primer lote contiene los datos de los
