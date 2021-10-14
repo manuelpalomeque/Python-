@@ -332,6 +332,9 @@ ordenAscendente(vectorCodigoChofer4)
 vectorDia = []
 vectorKmViaje_ = []
 vectorPiezasRotas = []
+vectorCantidadViajes_chofer = []
+
+inicializarEn0(vectorCantidadViajes_chofer, 30)
 
 def cargarlote5():
     dia_ = int(input('Ingrese el dia: '))
