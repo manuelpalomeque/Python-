@@ -329,6 +329,19 @@ def ordenAscendente(vecAOrdenar):
 ordenAscendente(vectorNumCamion4)
 ordenAscendente(vectorCodigoChofer4)
 
+vectorDia = []
+vectorKmViaje_ = []
+vectorPiezasRotas = []
+
+def cargarlote5():
+    dia_ = int(input('Ingrese el dia: '))
+    cod_chofer = int(input('Ingrese el codigo de chofer: '))
+    cant_kmRecorridos = float('Ingrese la cantidad de km recorridos: ')
+    cant_piezasRotas = int(input('Cantidad de piezas rotas: '))
+    while dia_ != 0:
+
+cargarlote5()
+
 #  Una empresa de alquiler de autos cuenta con distintas agencias desde donde efectúa sus
 # operaciones. Para ello cuenta con varios lotes de registros. Un primer lote contiene los datos de los
 # autos, cada registro está compuesto por:
