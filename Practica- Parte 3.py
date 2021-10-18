@@ -1,5 +1,5 @@
 # LOTES DE CARGA Y PROCESOS   --------------------------------------------------------------
-# Una empresa que fabrica 20 artículos tiene la siguiente información para cada uno de ellos:
+# 1. Una empresa que fabrica 20 artículos tiene la siguiente información para cada uno de ellos:
 #       - Código de Artículo (4 dígitos, no correlativos).
 #       - Precio Unitario.
 # Este primer lote no se encuentra ordenado.
@@ -117,7 +117,7 @@ for art in accCantTotalVend:
         print(f'El articulo {codigo1[ind_]}, supera el promedio de ventas ({promVenArticulos}), con {art} ventas.')
     ind_ += 1
 
-# Se dispone de un lote de 300 registros (uno por artículo), cada uno de los cuales tiene la
+# 2. Se dispone de un lote de 300 registros (uno por artículo), cada uno de los cuales tiene la
 # siguiente información:
 #       - Número de artículo (4 dígitos no correlativos).
 #       - Cantidad de unidades en stock.
@@ -195,7 +195,7 @@ for w in range(len(accCantVen2)):
     if accCantVen2[w] == 0:
         print(f' El articulo numero {numArt2[w]}, no registro ventas')
 
-#  Una empresa de transporte de carga por camión posee 20 tarifas distintas de acuerdo al destino
+# 3. Una empresa de transporte de carga por camión posee 20 tarifas distintas de acuerdo al destino
 # de los envíos que deba realizar. Dispone de un lote de registros con la siguiente información:
 #       - Número de Tarifa (Número de 4 cifras, no correlativos).
 #       - Importe por KM.
@@ -276,7 +276,7 @@ def listado(v9, v8):
 
 listado(vectorNumCamion, vectorKmPorCamion)
 
-#  Una empresa que realiza transporte de productos frágiles cuenta con una flota de 30 camiones.
+#4.  Una empresa que realiza transporte de productos frágiles cuenta con una flota de 30 camiones.
 # Se generó un lote de registros con los siguientes datos para cada camión:
 #       - Número de camión (1 a 30).
 #       - Código de chofer (3 dígitos, no correlativos).
@@ -358,7 +358,11 @@ def cargarlote5():
 
 cargarlote5()
 
-#  Una empresa de alquiler de autos cuenta con distintas agencias desde donde efectúa sus
+menor_cantViajes = vectorCantidadViajes_chofer[0]
+
+#for dia in vectorDia:
+
+# 5. Una empresa de alquiler de autos cuenta con distintas agencias desde donde efectúa sus
 # operaciones. Para ello cuenta con varios lotes de registros. Un primer lote contiene los datos de los
 # autos, cada registro está compuesto por:
 #       - Código de auto (4 dígitos no correlativos).
