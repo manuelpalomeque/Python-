@@ -339,7 +339,7 @@ inicializarEn0(vectorCantidadViajes_chofer, 30)
 def cargarlote5():
     dia_ = int(input('Ingrese el dia: '))
     cod_chofer = int(input('Ingrese el codigo de chofer: '))
-    cant_kmRecorridos = float('Ingrese la cantidad de km recorridos: ')
+    cant_kmRecorridos = float(input('Ingrese la cantidad de km recorridos: '))
     cant_piezasRotas = int(input('Cantidad de piezas rotas: '))
     while dia_ != 0:
         vectorDia.append(dia_)
