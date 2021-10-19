@@ -353,7 +353,7 @@ def cargarlote5():
             cde += 1
         dia_ = int(input('Ingrese el dia: '))
         cod_chofer = int(input('Ingrese el codigo de chofer: '))
-        cant_kmRecorridos = float('Ingrese la cantidad de km recorridos: ')
+        cant_kmRecorridos = float(input('Ingrese la cantidad de km recorridos: '))
         cant_piezasRotas = int(input('Cantidad de piezas rotas: '))
 
 cargarlote5()
