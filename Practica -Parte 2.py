@@ -1,4 +1,4 @@
-#CICLO WHILE    ---------------------------------------------------------------------------
+# CICLO WHILE    ---------------------------------------------------------------------------
 #aumentar valor de  2 en 2, hasta llegar al  250:
 contador = 0
 
@@ -315,6 +315,25 @@ cantVen = int(input('Ingrese la cantidad de productos: '))
 
 monTot = producto(preProduc, cantVen)
 print(f'El monto total es ${monTot}')
+
+# Crear una función para calcular el total de un pago incluyendo un impuesto aplicado.
+# La función se llama calcular_total, recibe dos parámetros:
+## 1. pago_sin_impuesto
+## 2. impuesto (Ej. Valor de 10, significa 10% de impuesto, valor de 16 significa el 16% de impuesto)
+## La función debe regresar el total del pago incluyendo el porcentaje de impuesto proporcionado.
+## Ej. Si llamamos a la función calcular_total(1000, 16)
+# debe retornar el valor 1,160.0
+# Los valores los debe proporcionar el usuario y se procesados con la función input, convirtiendolos a tipo float.
+
+def calcular_total(pago_sin_impuestos_, impuestos2):
+    return pago_sin_impuestos_ + pago_sin_impuestos_ * (impuestos2/100)
+
+pago_sin_impuestos_ = float(input('Por favor ingrese el monto a abonar sin impuestos:$ '))
+impuestos2 = float(input('Por favor ingrese el porcentaje de impuestos (%): '))
+
+pago_con_impuesto_ = calcular_total(pago_sin_impuestos_, impuestos2)
+
+print(f'El pago total es: ${pago_con_impuesto_}')
 
 # Hacer una función llamada “mayor” que reciba dos números enteros y
 # devuelva el mayor de ellos o cero si son iguales.
