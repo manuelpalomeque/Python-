@@ -71,4 +71,8 @@ class Persona:
     def mostrar_detalle(self):
         print(f'Persona: {self.nombre}, {self.apellido}. {self.edad} {self.valores} {self.terminos}')
 
+persona1 = Persona('Jonathan', 'Palomeque', 30, '4848906', 2, 3, m='manzana', p= 'pera')
+print(f'Objeto Persona 1: {persona1.nombre}, {persona1.apellido}, {persona1.edad}')
+
+Persona.mostrar_detalle(persona1)
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
