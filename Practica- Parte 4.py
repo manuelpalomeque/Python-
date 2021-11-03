@@ -59,4 +59,16 @@ profundidadCubo = float(input('Ingrese la profundidad: '))
 cubo1 = Cubo(largoCubo, anchoCubo, profundidadCubo)
 print(f'El volumen total es: {cubo1.calcular_volumen():.2f} m3')
 
+# Crear una clase para generar diferentes tipos de personas de una agenda.
+class Persona:
+    def __init__(self, nombre, apellido, edad, *valores, **terminos):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.edad = edad
+        self.valores = valores
+        self.terminos = terminos
+
+    def mostrar_detalle(self):
+        print(f'Persona: {self.nombre}, {self.apellido}. {self.edad} {self.valores} {self.terminos}')
+
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
