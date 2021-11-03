@@ -52,4 +52,11 @@ class Cubo:
     def calcular_volumen(self):
         return  self.largo * self.ancho * self.profundidad
 
+largoCubo = float(input('Ingrese el Largo: '))
+anchoCubo = float(input('Ingrese el ancho: '))
+profundidadCubo = float(input('Ingrese la profundidad: '))
+
+cubo1 = Cubo(largoCubo, anchoCubo, profundidadCubo)
+print(f'El volumen total es: {cubo1.calcular_volumen():.2f} m3')
+
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
