@@ -42,4 +42,14 @@ rectangulo1 = Rectangulo(base, altura)
 
 print(f'El área del rectángulo es: {rectangulo1.calcular_area():.2f} m2')
 
+# Crear una clase para calcular el volumen de un rectángulo.
+class Cubo:
+    def __init__(self, largoCubo, anchoCubo, profundidadCubo):
+        self.largo = largoCubo
+        self.ancho = anchoCubo
+        self.profundidad = profundidadCubo
+
+    def calcular_volumen(self):
+        return  self.largo * self.ancho * self.profundidad
+
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
