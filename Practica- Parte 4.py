@@ -89,4 +89,12 @@ persona1 = Persona('Jonathan', 'Palomeque', 30, '4848906', 2, 3, m='manzana', p=
 print(f'Objeto Persona 1: {persona1._nombre}, {persona1._apellido}, {persona1.edad}')
 Persona.mostrar_detalle(persona1)
 
+# Crear una clase para generar diferentes tipos de automoviles de una agencia de ventas.Implementar los metodos
+#GET y SET en todos los atributos (marca, color, antiguedad).
+class Auto:
+    def __init__(self, marca, color, antiguedad):
+        self._marca = marca
+        self._color = color
+        self._antiguedad = antiguedad
+
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
