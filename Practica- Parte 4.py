@@ -104,6 +104,13 @@ class Auto:
     def marca(self, marca):
         self._marca = marca
 
+    @property
+    def color(self):
+        return self._color
+    @color.setter
+    def color(self, color):
+        self._color = color
+
     def mostrar_detalle(self):
         print(f'''Automovil: 
     Marca: {self._marca}
