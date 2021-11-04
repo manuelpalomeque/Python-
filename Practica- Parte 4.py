@@ -60,11 +60,11 @@ cubo1 = Cubo(largoCubo, anchoCubo, profundidadCubo)
 print(f'El volumen total es: {cubo1.calcular_volumen():.2f} m3')
 
 # Crear una clase para generar diferentes tipos de personas de una agenda.Implementar los metodos
-#GET y SET en el nombre.
+#GET y SET en el atributo nombre. Definir el atributo apellido como "Read Only"
 class Persona:
     def __init__(self, nombre, apellido, edad, *valores, **terminos):
-        self.nombre = nombre
-        self.apellido = apellido
+        self._nombre = nombre
+        self._apellido = apellido
         self.edad = edad
         self.valores = valores
         self.terminos = terminos
@@ -77,12 +77,16 @@ class Persona:
     def nombre(self, nombre):
         self._nombre = nombre
 
+    @property
+    def apellido(self):
+        return self._apellido
+
     def mostrar_detalle(self):
-        print(f'Persona: {self._nombre}, {self.apellido}. {self.edad}  {self.valores} {self.terminos}')
+        print(f'Persona: {self._nombre}, {self._apellido}. {self.edad}  {self.valores} {self.terminos}')
 
 persona1 = Persona('Jonathan', 'Palomeque', 30, '4848906', 2, 3, m='manzana', p= 'pera')
 
-print(f'Objeto Persona 1: {persona1.nombre}, {persona1.apellido}, {persona1.edad}')
+print(f'Objeto Persona 1: {persona1._nombre}, {persona1._apellido}, {persona1.edad}')
 Persona.mostrar_detalle(persona1)
 
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
