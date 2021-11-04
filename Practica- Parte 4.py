@@ -97,4 +97,12 @@ class Auto:
         self._color = color
         self._antiguedad = antiguedad
 
+    def mostrar_detalle(self):
+        print(f'''Automovil: 
+    Marca: {self._marca}
+    Color: {self._color} 
+    Antiguedad: {self._antiguedad} años
+    ''')
+
+auto1 = Auto('Fiat', 'Rojo', 10)
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
