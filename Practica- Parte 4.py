@@ -97,6 +97,13 @@ class Auto:
         self._color = color
         self._antiguedad = antiguedad
 
+    @property
+    def marca(self):
+        return self._marca
+    @marca.setter
+    def marca(self, marca):
+        self._marca = marca
+
     def mostrar_detalle(self):
         print(f'''Automovil: 
     Marca: {self._marca}
@@ -105,4 +112,6 @@ class Auto:
     ''')
 
 auto1 = Auto('Fiat', 'Rojo', 10)
+Auto.mostrar_detalle(auto1)
+
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
