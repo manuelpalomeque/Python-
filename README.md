@@ -4,7 +4,7 @@ En este repositorio se encuentran ejercicios y practicas del lenguaje PYTHON.
 El objetivo fue, mejorar mi manejo y la practica del mismo. Si bien todavia estoy construyendo el repositorio,
 todo el avance que haga lo subire acá.
 
-### El contenido se organizó en tres partes :
+### El contenido se organizó en cuatro partes :
 
 #### A) Parte 1:
           Operadores Arigméticos
