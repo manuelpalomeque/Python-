@@ -59,7 +59,8 @@ profundidadCubo = float(input('Ingrese la profundidad: '))
 cubo1 = Cubo(largoCubo, anchoCubo, profundidadCubo)
 print(f'El volumen total es: {cubo1.calcular_volumen():.2f} m3')
 
-# Crear una clase para generar diferentes tipos de personas de una agenda.
+# Crear una clase para generar diferentes tipos de personas de una agenda.Implementar los metodos
+#GET y SET en el nombre.
 class Persona:
     def __init__(self, nombre, apellido, edad, *valores, **terminos):
         self.nombre = nombre
@@ -68,11 +69,20 @@ class Persona:
         self.valores = valores
         self.terminos = terminos
 
+    @property
+    def nombre(self):
+        return self._nombre
+
+    @nombre.setter
+    def nombre(self, nombre):
+        self._nombre = nombre
+
     def mostrar_detalle(self):
-        print(f'Persona: {self.nombre}, {self.apellido}. {self.edad} {self.valores} {self.terminos}')
+        print(f'Persona: {self._nombre}, {self.apellido}. {self.edad}  {self.valores} {self.terminos}')
 
 persona1 = Persona('Jonathan', 'Palomeque', 30, '4848906', 2, 3, m='manzana', p= 'pera')
-print(f'Objeto Persona 1: {persona1.nombre}, {persona1.apellido}, {persona1.edad}')
 
+print(f'Objeto Persona 1: {persona1.nombre}, {persona1.apellido}, {persona1.edad}')
 Persona.mostrar_detalle(persona1)
+
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
