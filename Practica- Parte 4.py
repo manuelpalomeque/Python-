@@ -150,6 +150,26 @@ Empleado.mostrar_detalle(empleado1)
 #       Agregar el atributo "velocidad". Encapsular e implementar metodos
 # 2) Bicicleta:
 #       Agregar el atributo "tipo". Encapsular e implementar metodos
+class Vehiculo:
+    def __init__(self, color, ruedas):
+        self._color = color
+        self._ruedas = ruedas
 
+    @property
+    def color(self):
+        return self._color
+    @color.setter
+    def color(self, color):
+        self._color = color
+
+    @property
+    def ruedas(self):
+        return  self._ruedas
+    @ruedas.setter
+    def ruedas(self, ruedas):
+        self._ruedas = ruedas
+
+    def __str__(self):
+        return f'Color: {self.color}, ruedas: {self.ruedas}'
 
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
