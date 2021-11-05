@@ -206,4 +206,10 @@ class Bicicleta(Vehiculo):
         return  f'''Bicicleta: 
         {super().__str__()}, tipo: {self._tipo}'''
 
+coche1 = Coche('azul', 'cuatro tipo A', 100)
+print(coche1)
+
+bicicleta1 = Bicicleta('rojo', 'dos tipo C', 'montaña')
+print(bicicleta1)
+
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
