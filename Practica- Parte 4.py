@@ -144,5 +144,12 @@ class Empleado(Persona):
 empleado1 = Empleado('Juan', 'Paez', 28, 50000)
 Empleado.mostrar_detalle(empleado1)
 
+# Definir la clase padre "Vehiculo" con los atributos: color y ruedas, encapsular e implementar
+# los metodos get y set. Crear las clases hijas:
+# 1) Coche:
+#       Agregar el atributo "velocidad". Encapsular e implementar metodos
+# 2) Bicicleta:
+#       Agregar el atributo "tipo". Encapsular e implementar metodos
+
 
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
