@@ -133,7 +133,16 @@ class Empleado(Persona):
         super().__init__(nombre, apellido, edad)
         self.sueldo = sueldo
 
-empleado1 = Empleado('Juan', 'Paez', 28, 5000)
+    def mostrar_detalle(self):
+        print(f'''Empleado: 
+    Nombre: {self._nombre}
+    Apellido: {self._apellido} 
+    Edad: {self.edad} años
+    Sueldo: ${self.sueldo}
+    ''')
+
+empleado1 = Empleado('Juan', 'Paez', 28, 50000)
+Empleado.mostrar_detalle(empleado1)
 
 
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
