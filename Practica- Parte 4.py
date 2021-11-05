@@ -62,12 +62,10 @@ print(f'El volumen total es: {cubo1.calcular_volumen():.2f} m3')
 # Crear una clase para generar diferentes tipos de personas de una agenda.Implementar los metodos
 #GET y SET en el atributo nombre. Definir el atributo apellido como "Read Only"
 class Persona:
-    def __init__(self, nombre, apellido, edad, *valores, **terminos):
+    def __init__(self, nombre, apellido, edad):
         self._nombre = nombre
         self._apellido = apellido
         self.edad = edad
-        self.valores = valores
-        self.terminos = terminos
 
     @property
     def nombre(self):
@@ -82,15 +80,15 @@ class Persona:
         return self._apellido
 
     def mostrar_detalle(self):
-        print(f'Persona: {self._nombre}, {self._apellido}. {self.edad}  {self.valores} {self.terminos}')
+        print(f'Persona: {self._nombre}, {self._apellido}. {self.edad} años')
 
-persona1 = Persona('Jonathan', 'Palomeque', 30, '4848906', 2, 3, m='manzana', p= 'pera')
+persona1 = Persona('Jonathan', 'Palomeque', 30)
 
 print(f'Objeto Persona 1: {persona1._nombre}, {persona1._apellido}, {persona1.edad}')
 Persona.mostrar_detalle(persona1)
 
-# Crear una clase para generar diferentes tipos de automoviles de una agencia de ventas.Implementar los metodos
-#GET y SET en todos los atributos (marca, color, antiguedad).
+# Crear una clase para generar diferentes tipos de automoviles de una agencia de ventas.Encapsular e implementar
+# los metodos GET y SET en todos los atributos (marca, color, antiguedad).
 class Auto:
     def __init__(self, marca, color, antiguedad):
         self._marca = marca
@@ -127,5 +125,15 @@ class Auto:
 
 auto1 = Auto('Fiat', 'Rojo', 10)
 Auto.mostrar_detalle(auto1)
+
+# Heredar las caracteristicas de la clase padre "Persona", que se pasa a la clase hijo "Empleados".
+# Agregar el atributo sueldo
+class Empleado(Persona):
+    def __init__(self, nombre, apellido, edad, sueldo): # sin esta linea va a dar error
+        super().__init__(nombre, apellido, edad)
+        self.sueldo = sueldo
+
+empleado1 = Empleado('Juan', 'Paez', 28, 5000)
+
 
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
