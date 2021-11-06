@@ -212,4 +212,6 @@ print(coche1)
 bicicleta1 = Bicicleta('rojo', 'dos tipo C', 'montaña')
 print(bicicleta1)
 
+#Crear una clase Clientes, la cual permita tener un contador  ID de numero de cliente
+
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
