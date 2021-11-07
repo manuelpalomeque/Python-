@@ -213,5 +213,20 @@ bicicleta1 = Bicicleta('rojo', 'dos tipo C', 'montaña')
 print(bicicleta1)
 
 #Crear una clase Clientes, la cual permita tener un contador  ID de numero de cliente
+class Videojuego:
+    contador_juego = 0
+
+    @classmethod
+    def generar_siguiente_valor(cls):
+        cls.contador_juego += 1
+        return cls.contador_juego
+
+    def __init__(self, nombre, plataforma):
+        self.id_juego = Videojuego.generar_siguiente_valor()
+        self.nombre = nombre
+        self.plataforma = plataforma
+
+    def __str__(self):
+        return f'Videojuego [{self.id_juego} {self.nombre} {self.plataforma}]'
 
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
