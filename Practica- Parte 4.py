@@ -229,4 +229,19 @@ class Videojuego:
     def __str__(self):
         return f'Videojuego [{self.id_juego} {self.nombre} {self.plataforma}]'
 
+
+juego1 = Videojuego('Pokemon', 'Nintendo')
+juego2 = Videojuego('Mario Bross', 'Nintendo')
+juego3 = Videojuego('Mortal Kombat', 'Play Station')
+
+print(f'''Valor Contador total de videojuegos: {Videojuego.contador_juego}
+    Juego: {juego1.nombre}
+    Contador: {juego1.id_juego}
+
+    Juego: {juego2.nombre}
+    Contador: {juego2.id_juego}
+
+    Juego: {juego3.nombre}
+    Contador: {juego3.id_juego}
+    ''')
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
