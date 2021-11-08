@@ -244,4 +244,9 @@ print(f'''Valor Contador total de videojuegos: {Videojuego.contador_juego}
     Juego: {juego3.nombre}
     Contador: {juego3.id_juego}
     ''')
+
+# POLOMORFISMO:
+# Crear una clase hija de la clase "Empleado", la cual se llamara "Gerente" y cuenta con los
+# atributos nombre, sueldo y departamento. Aplicar el concepto de polimorfismo.
+
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
