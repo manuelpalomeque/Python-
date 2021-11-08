@@ -250,4 +250,11 @@ print(f'''Valor Contador total de videojuegos: {Videojuego.contador_juego}
 # se llamara "Gerente" y cuenta con los atributos: nombre, sueldo y departamento.
 # Aplicar el concepto de polimorfismo.
 
+class Gerente(Empleado):
+    def __init__(self, nombre, apellido, edad, sueldo, departamento):
+        super().__init__(nombre,apellido, edad, sueldo)
+        self.departamento = departamento
+
+    def __str__(self):
+        return  f'Gerente: Departamento {self.departamento}, {super().__str__()}'
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
