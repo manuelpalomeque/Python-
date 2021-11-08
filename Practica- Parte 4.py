@@ -257,4 +257,10 @@ class Gerente(Empleado):
 
     def __str__(self):
         return  f'Gerente: Departamento {self.departamento}, {super().__str__()}'
+
+def imprimir_detalles(objeto):
+    print(objeto)
+    print(type(objeto))
+    if isinstance(objeto, Gerente):
+        print(objeto.departamento)
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
