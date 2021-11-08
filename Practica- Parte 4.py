@@ -263,4 +263,12 @@ def imprimir_detalles(objeto):
     print(type(objeto))
     if isinstance(objeto, Gerente):
         print(objeto.departamento)
+
+empleado1 = Empleado('Juan', 'Paez',30, 5000)
+imprimir_detalles(empleado1)
+
+print('-'.center(50, '-'))
+
+gerente1 = Gerente('Carla', 'Maciel', 29, 20000, 'Sistemas' )
+imprimir_detalles(gerente1)
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
