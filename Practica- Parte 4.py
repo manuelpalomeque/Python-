@@ -322,4 +322,6 @@ class Teclado(DipositivoEntrada):
         self._idTeclado = Teclado.contadorTeclados
         super().__init__(marca, tipoEntrada)
 
+    def __str__(self):
+        return f' ID: {self._idTeclado}, marca: {self._marca}, tipo de entrada: {self._tipoEntrada}'
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
