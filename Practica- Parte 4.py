@@ -272,8 +272,8 @@ print('-'.center(50, '-'))
 gerente1 = Gerente('Carla', 'Maciel', 29, 20000, 'Sistemas' )
 imprimir_detalles(gerente1)
 
-# Laboratorio Mundo PC
-# A)Crear la clase Dispositivo con los atriburos:tipoEntrada y marca. Aplicar encapsulamiento
+# Laboratorio Mundo PC:
+# A)Crear la clase Dispositivo con los atriburos: tipoEntrada y marca. Aplicar encapsulamiento
 # y metodos get y set
 class DipositivoEntrada:
 
@@ -288,5 +288,14 @@ class DipositivoEntrada:
     def tipoEntrada(self, tipoEntrada):
         self._tipoEntrada = tipoEntrada
 
+    @property
+    def marca(self):
+        return self._marca
+    @marca.setter
+    def marca(self, marca):
+        self._marca = marca
+
+    def __str__(self):
+        print(f'Caracteristicas: {self._tipoEntrada} y {self._marca}')
 
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
