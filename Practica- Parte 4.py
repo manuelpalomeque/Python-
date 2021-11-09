@@ -313,5 +313,13 @@ class Raton(DipositivoEntrada):
 
 # C)Crear la clase hija "Teclado" con los atributos: marca y tipoEntrada. Incorporar la
 # variable de clase"contadorTeclados. Aplicar encapsulamiento.
+class Teclado(DipositivoEntrada):
+
+    contadorTeclados = 0
+
+    def __init__(self, marca, tipoEntrada):
+        Teclado.contadorTeclados += 1
+        self._idTeclado = Teclado.contadorTeclados
+        super().__init__(marca, tipoEntrada)
 
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
