@@ -324,4 +324,9 @@ class Teclado(DipositivoEntrada):
 
     def __str__(self):
         return f' ID: {self._idTeclado}, marca: {self._marca}, tipo de entrada: {self._tipoEntrada}'
+
+# D)Crear la clase hija "Monitor" con los atributos: marca y tamaño. Incorporar la
+# variable de clase"contadorMonitores. Aplicar encapsulamiento y metodos Get y Set.
+
+
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
