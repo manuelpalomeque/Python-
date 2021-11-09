@@ -273,7 +273,7 @@ gerente1 = Gerente('Carla', 'Maciel', 29, 20000, 'Sistemas' )
 imprimir_detalles(gerente1)
 
 # Laboratorio Mundo PC:
-# A)Crear la clase Dispositivo con los atriburos: tipoEntrada y marca. Aplicar encapsulamiento
+# A)Crear la clase padre "DispositivoEntrada" con los atriburos: tipoEntrada y marca. Aplicar encapsulamiento
 # y metodos get y set
 class DipositivoEntrada:
 
@@ -297,5 +297,18 @@ class DipositivoEntrada:
 
     def __str__(self):
         print(f'Caracteristicas: {self._tipoEntrada} y {self._marca}')
+
+# B)Crear la clase hija "Raton" con los atriburos: marca y tipoEntrada. Incorporar la
+# variable de clase"contadorRatones. Aplicar encapsulamiento.
+class Raton(DipositivoEntrada):
+    contadorRatones = 0
+
+    def __init__(self, marca, tipoEntrada):
+        Raton.contadorRatones += 1
+        self._idRaton = Raton.contadorRatones
+        super().__init__(tipoEntrada, marca)
+
+    def __str__(self):
+        return f' ID : {self._idRaton}, marca: {self._marca}, tipo Entrada: {self._tipoEntrada}'
 
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
