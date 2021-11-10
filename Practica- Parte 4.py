@@ -327,6 +327,14 @@ class Teclado(DipositivoEntrada):
 
 # D)Crear la clase hija "Monitor" con los atributos: marca y tamaño. Incorporar la
 # variable de clase"contadorMonitores. Aplicar encapsulamiento y metodos Get y Set.
+class Monitor:
+    contadorMonitores = 0
+
+    def __init__(self, marca, tamaño):
+        Monitor.contadorMonitores += 1
+        self._idMonitor = Monitor.contadorMonitores
+        self._marca = marca
+        self._tamaño = tamaño
 
 
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
