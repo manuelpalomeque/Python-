@@ -389,4 +389,18 @@ class Computadora:
     def monitor(self, monitor):
         self._monitor = monitor
 
+    @property
+    def teclado(self):
+        return  self._teclado
+    @teclado.setter
+    def teclado(self, teclado):
+        self._teclado = teclado
+
+    @property
+    def raton(self):
+        return self._raton
+    @raton.setter
+    def raton(self, raton):
+        self._raton = raton
+
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
