@@ -403,4 +403,13 @@ class Computadora:
     def raton(self, raton):
         self._raton = raton
 
+    def __str__(self):
+        return f'''
+        Id: {self._idComputadora} 
+        Nombre: {self._nombre}
+        Monitor: {self._monitor}
+        Teclado: {self._teclado}
+        Raton: {self._raton}
+        '''
+
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
