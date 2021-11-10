@@ -325,7 +325,7 @@ class Teclado(DipositivoEntrada):
     def __str__(self):
         return f' ID: {self._idTeclado}, marca: {self._marca}, tipo de entrada: {self._tipoEntrada}'
 
-# D)Crear la clase hija "Monitor" con los atributos: marca y tamaño. Incorporar la
+# D)Crear la clase "Monitor" con los atributos: marca y tamaño. Incorporar la
 # variable de clase"contadorMonitores. Aplicar encapsulamiento y metodos Get y Set.
 class Monitor:
     contadorMonitores = 0
@@ -359,4 +359,9 @@ class Monitor:
 
     def __str__(self):
         return f'ID: {self._idMonitor}, marca: {self._marca},tamaño: {self._tamaño} Pulgadas'
+
+# E)Crear la clase "Computadora" con los atributos: nombre, referencias de objetos: monitor, teclado
+# y raton. Incorporar la variable de clase "contadorComputadoras". Aplicar encapsulamiento y metodos
+# Get y Set.
+
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
