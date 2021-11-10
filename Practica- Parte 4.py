@@ -363,5 +363,17 @@ class Monitor:
 # E)Crear la clase "Computadora" con los atributos: nombre, referencias de objetos: monitor, teclado
 # y raton. Incorporar la variable de clase "contadorComputadoras". Aplicar encapsulamiento y metodos
 # Get y Set.
+class Computadora:
+
+    contadorComputadora = 0
+
+    def __init__(self, nombre, monitor, teclado, raton):
+        Computadora.contadorComputadora += 1
+        self._idComputadora =  Computadora.contadorComputadora
+        self._nombre = nombre
+        self._monitor = monitor
+        self._teclado = teclado
+        self._raton = raton
+
 
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
