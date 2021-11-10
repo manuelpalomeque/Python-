@@ -350,4 +350,13 @@ class Monitor:
     def marca(self, marca):
         self._marca = marca
 
+    @property
+    def tamaño(self):
+        return  self._tamaño
+    @tamaño.setter
+    def tamaño(self, tamaño):
+        self._tamaño = tamaño
+
+    def __str__(self):
+        return f'ID: {self._idMonitor}, marca: {self._marca},tamaño: {self._tamaño} Pulgadas'
 # xxxxxxxxxxxxxxxxXX   ---------------------------------------------------------------------------
